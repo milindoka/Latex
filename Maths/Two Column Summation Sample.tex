@@ -1,0 +1,20 @@
+\documentclass[17pt]{extarticle}
+\usepackage{amsmath}
+\begin{document}
+
+\begin{equation*}
+\begin{aligned}[t]
+\frac{\partial l(\mu, \sigma|\mathbf{y})}{\partial  \mu} & = -\frac{1}      {2\sigma^{2}}\sum_{i=1}^{a}\sum_{j=1}^{n_{i}}(y_{ij}-\mu)=0 \\
+ & = -\sum_{i=1}^{a}\sum_{j=1}^{n_{i}}y_{ij}+n\mu=0\\
+ & \Rightarrow \sum_{i=1}^{a}\sum_{j=1}^{n_{i}}y_{ij}=n\mu\\
+ & \Rightarrow     \tilde{\mu}=\frac{\sum_{i=1}^{a}\sum_{j=1}^{n_{i}}y_{ij}}{n}=\bar{y}_{..} \\
+\end{aligned}
+\qquad 
+\begin{aligned}[t]
+\frac{\partial l(\mu, \sigma|\mathbf{y})}{\partial  \sigma^{2}} &     =\frac{-n}{2\sigma^{2}}+\frac{1}   {2(\sigma^{2})^{2}}\sum_{i=1}^{a}\sum_{j=1}^{n_{i}}(y_{ij}-\mu)^{2}=0 \\ 
+& \Rightarrow    \tilde{\sigma}^{2}=\frac{\sum_{i=1}^{a}\sum_{j=1}^{n_{i}}(y_{ij}-\mu)^{2}}{n}  \\ 
+& \Rightarrow   \tilde{\sigma}^{2}=\frac{\sum_{i=1}^{a}\sum_{j=1}^{n_{i}}(y_{ij}-  \bar{y}_{..})^{2}}{n}
+\end{aligned}
+\end{equation*}
+
+\end{document}
