@@ -1,0 +1,42 @@
+\documentclass[17pt]{extarticle}
+\usepackage{amsmath}
+\usepackage{multicol}
+
+\begin{document}
+
+\begin{gather*}
+\lim_{x \to 0} \frac{\tan{x} - \sin{x}}{x^3} \\
+\lim_{x \to 0} \frac{\frac{\sin{x}}{\cos{x}} - \sin{x}}{x^3}\\
+\lim_{x \to 0} \frac{\tan{x} - \sin{x}}{x^3}
+\end{gather*}
+
+
+
+\begin{equation*}
+\begin{aligned}[t]
+ \lim_{x \to 0} \frac{\tan{x} - \sin {x}}{x^3} 
+ &= \lim_{x \to 0} \frac{\frac{\sin{x}}{\cos{x}} - \sin{x}}{x^3}\\
+ &= \lim_{x \to 0} \frac{sin x\left(\frac{1}{cos x} - 1\right)}{x^3}\\
+ &= \lim_{x \to 0} \frac{sin x(1 - cos x)}{x^3cosx} \\
+ &= \lim_{x \to 0}\left[\frac{sin x}{x}\cdot\frac{1 - cos x}{x^2} \right] \\
+\end{aligned}
+\qquad 
+\vrule
+\begin{aligned}[t]
+\end{aligned}
+\begin{aligned}[t]
+&= \lim_{x \to 0} \frac{tan x - sin x}{x^3} \\
+&=\lim_{x \to 0} \frac{tan x - sin x}{x^3}\\ 
+&=\lim_{x \to 0} \frac{tan x - sin x}{x^3} \\
+\end{aligned}
+\end{equation*}
+
+
+\begin{flalign}   % gather with numering
+    \lim_{x \to 0} \frac{\tan{x} - \sin {x}}{x^3}\\\\
+    \frac{sin x \frac{1}{cosx}}{x^3}
+\end{flalign} 
+
+
+
+\end{document}
