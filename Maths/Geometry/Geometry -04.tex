@@ -1,0 +1,19 @@
+\documentclass[14pt]{extarticle}
+\usepackage{amsmath}
+\usepackage{multicol}
+\usepackage{tikz}
+
+\begin{document}
+\newcommand{\bluecircle}{
+    \draw[blue] circle (2);
+    }
+
+\begin{tikzpicture}
+    \bluecircle
+    \foreach \i in {0,10,...,350}
+    \draw (0,0) -- (\i:2);
+\end{tikzpicture}
+
+
+
+\end{document}
