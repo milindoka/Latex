@@ -1,0 +1,95 @@
+\documentclass[17pt]{extarticle}
+\usepackage{amsmath, amssymb}
+\usepackage{nccmath}
+\usepackage[a4paper, total={6.5in, 9in},left=27mm]{geometry}
+\usepackage{titlesec}
+
+
+%\titleformat*{\section}{\fontsize{17}{20}\selectfont}
+
+
+\titleformat{\section}
+{\normalfont\normalsize\bfseries}{\thesection}{1em}{}
+
+\setcounter{secnumdepth}{0} %% no numbering
+
+\begin{document}
+\noindent
+
+\begin{fleqn} 
+
+%----------------------------------------
+
+\section{Question: 01}
+
+\begin{equation} \nonumber
+\begin{alignedat}{4}
+& Evaluate :\ \ \ 
+\lim_{x \to 0} \frac{\tan{x} - \sin{x}}{x^3}\\
+\end{alignedat}
+\end{equation}
+
+
+%----------------------------------------
+
+\section{Answer: 01}
+
+\begin{equation} \nonumber
+\begin{alignedat}{4}
+& \texttt{\ \ } \lim_{x \to 0} \frac{\tan{x} - \sin{x}}{x^3}\\
+&= \lim_{x \to 0} \frac{\frac{\sin{x}}{\cos{x}}-\sin{x}}{x^3}\\
+&= \frac{sin x\left(\frac{1}{cos x} - 1\right)}{x^3}\\
+&= \lim_{x \to 0} \frac{\sin{x}(1  - \cos{x})}{x^3\cos{x}}\\
+&= \lim_{x \to 0} \frac{\sin{x}}{x}\cdot\lim_{x \to 0} \frac{1 - cos x}{x^2}\cdot\lim_{x \to 0}\frac{1}{cos x}\\
+\end{alignedat}
+\quad
+\vrule
+\quad
+\begin{alignedat}{4}
+&= \lim_{x \to 0} \frac{1 - cos x}{x^2}\\
+&= \lim_{x \to 0} \frac{2sin^2\frac{x}{2}}{x^2}\\
+&= 2\cdot\lim_{x \to 0} \frac{sin\frac{x}{2}}{\frac{x}{2}}\cdot\lim_{x \to 0} \frac{sin\frac{x}{2}}{\frac{x}{2}}\\
+&= 2\ \cdot\ \frac{1}{2}\ \cdot\ \frac{1}{2}\\
+&= \frac{1}{2}
+\end{alignedat}
+\end{equation}
+
+%----------------------------------------
+
+\section{Question: 02}
+
+\begin{equation} \nonumber
+\begin{alignedat}{4}
+& Evlauate :\ \  \int \frac{\tan{x} - \sin{x}}{x^3}\ dx\\
+\end{alignedat}
+\end{equation}
+
+
+%----------------------------------------
+
+\section{Answer}
+
+\begin{equation} \nonumber
+\begin{alignedat}{4}
+& \texttt{\ \ } \lim_{x \to 0} \frac{\tan{x} - \sin{x}}{x^3}\\
+&= \lim_{x \to 0} \frac{\frac{\sin{x}}{\cos{x}}-\sin{x}}{x^3}\\
+&= \frac{sin x\left(\frac{1}{cos x} - 1\right)}{x^3}\\
+&= \lim_{x \to 0} \frac{\sin{x}(1  - \cos{x})}{x^3\cos{x}}\\
+\end{alignedat}
+\qquad
+\qquad
+\vrule
+\qquad
+\begin{alignedat}{4}
+&= \lim_{x \to 0}\left[\frac{sin x}{x}\cdot\frac{1 - cos x}{x^2} \right] \\
+&= \lim_{x \to 0} \frac{\frac{\sin{x}}{\cos{x}}-\sin{x}}{x^3}\\
+&= \lim_{x \to 0} \frac{\tan{x} - \sin{x}}{x^3}\\
+&= \lim_{x \to 0} \frac{\tan{x} - \sin{x}}{x^3}\\
+\end{alignedat}
+\end{equation}
+
+%----------------------------------------
+
+
+\end{fleqn}
+\end{document} 
