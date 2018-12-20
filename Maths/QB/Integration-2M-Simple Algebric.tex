@@ -24,7 +24,7 @@
 
 \begin{equation} \nonumber
 \begin{alignedat}{4}
-& Evlauate :\ \  \int \left( 5x^4-3x^2+4sinx - \frac{5}{x^2}+\frac{6}{x^3}\right) dx\\
+& Evlauate :\ \  \int \left( 5x^4-3x^2+4sin\,x - \frac{5}{x^2}+\frac{6}{x^3}\right) dx\\
 \end{alignedat}
 \end{equation}
 
@@ -34,21 +34,10 @@
 
 \begin{equation} \nonumber
 \begin{alignedat}{4}
-& \texttt{\ \ } \lim_{x \to 0} \frac{\tan{x} - \sin{x}}{x^3}\\
-&= \lim_{x \to 0} \frac{\frac{\sin{x}}{\cos{x}}-\sin{x}}{x^3}\\
-&= \frac{sin x\left(\frac{1}{cos x} - 1\right)}{x^3}\\
-&= \lim_{x \to 0} \frac{\sin{x}(1  - \cos{x})}{x^3\cos{x}}\\
-&= \lim_{x \to 0} \frac{\sin{x}}{x}\cdot\lim_{x \to 0} \frac{1 - cos x}{x^2}\cdot\lim_{x \to 0}\frac{1}{cos x}\\
-\end{alignedat}
-\quad
-\vrule
-\quad
-\begin{alignedat}{4}
-&= \lim_{x \to 0} \frac{1 - cos x}{x^2}\\
-&= \lim_{x \to 0} \frac{2sin^2\frac{x}{2}}{x^2}\\
-&= 2\cdot\lim_{x \to 0} \frac{sin\frac{x}{2}}{\frac{x}{2}}\cdot\lim_{x \to 0} \frac{sin\frac{x}{2}}{\frac{x}{2}}\\
-&= 2\ \cdot\ \frac{1}{2}\ \cdot\ \frac{1}{2}\\
-&= \frac{1}{2}
+& \texttt{\ \ } \int \left( 5x^4-3x^2+4sin\,x - \frac{5}{x^2}+\frac{6}{x^3}\right) dx\\
+&= 5\int x^4dx-3\int x^2dx+4\int sin\,xdx - 5\int {x^{-2}}dx+6\int x^{-3}dx\\
+&= 5\left[\frac{x^5}{5}\right]-3\left[\frac{x^3}{3}\right]+4(-cos x)-5\left[\frac{x^{-1}}{-1} \right]+6\left[\frac{x^{-2}}{-2} \right]+c\\
+&= x^5 - x^3 - 4cosx + \frac{5}{x} - \frac{6}{x^2}+c\\
 \end{alignedat}
 \end{equation}
 
