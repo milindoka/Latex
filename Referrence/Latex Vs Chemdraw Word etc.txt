@@ -1,0 +1,80 @@
+Word and LaTeX
+
+LaTeX can technically do more things than word. In general LaTeX scales better with the size of your document. If you're writing a huge report in word you may find your pictures, references and comments shift around all the time, making a mess of everything. It's easier to find procedural solutions for these problems in LaTeX, so you can set your preference in the beginning of writing, and then be sure that they last all through to the end without too much double checking.
+
+Chemdraw is the expensive "big business" program that everyone uses to draw pictures of molecules. It is for those kinds of mechanisms what word is to writing letters.
+
+If you don't want to buy or somehow otherwise appropriate chemdraw(Note: If you will ever genuinely need chemdraw, say for a big project or a scientific research paper, your university will probably supply a copy for you), you can download chemsketch which is freeware. It has fewer features and in general looks uglier, but it still beats MS paint.
+
+
+LaTeX is very good for separating the content from the appearance. When making the document, you can truly focus on the "what" rather than the "how". During writing you don't have to worry over how it should end up looking. The layout of your document is defined separately, and can be very easily changed afterwards without much work. In many cases you can change the entire look and feel of the document by changing only some style commands in the beginning of your document.
+
+Unlike word processing software such as MS Word, LaTeX forces you to write well structured documents because rather than saying: 'something should have this font and size', you say: 'here we begin a new section'.
+
+LaTeX is content aware. There are many algorithms working 'behind the scenes' to present your content in a good way. There is automatic hyphenation (in many languages), intelligent placement of figures, and many other features. For example, a new section will never begin on the last like of a page, unless of course, if you tell it to.
+
+Numbering of chapters, sections, references, figures, equations, etc. occurs automatic, and after you write the document. As a result, you can easily change the order of things afterwards without having to change any numbering: this is all automatic. While this is possible in Word, you won't realise how poorly it works until you're used to something better.
+
+LaTeX is incredibly stable for (very) long documents. Bugs are incredibly rare after many years of public collaborative development, and when you open and compile a document made 20 years ago it will come out exactly the same as it did back then. LaTeX won't change anything unless you tell it to. This also means that creating and sharing templates is very easy.
+
+The software is completely free and open source. There's a huge online community and an even larger amount of documentation, resources, examples, etc. If there's something you don't know, it is very easy to google your question and get an answer that is plain text, and not something cumbersome like: 'if you have this version, then go to start, edit, preferences, etc.'
+
+Using LaTeX you can do pretty much anything you can think of, in most cases via packages. These are created and maintained by users, and needed for anything more than the most basics utilities. If you want something, there's probably already a package that does it for you.
+
+When should you NOT use LaTeX?
+
+if you don't want to learn it, or you don't have time to. There is a learning curve and, while the effort quickly pays off, in the beginning the way of working takes getting used to. You will find that creating your first document in LaTeX will take more time than you may be used to. It is advisable to practise long before you have to stress about, for example, a thesis deadline.
+
+if graphics design is the purpose of your document. In principle, almost anything is possible and there are many packages for creating images, graphic elements and designing posters, presentations, etc. Nonetheless, if the design is the sole purpose (rather than the content), other programs such as Adobe Illustrator may be more useful.
+
+if your document is already written. Writing something in LaTeX works in a bit of a different way, and this works much better if you account for it from the start. Don't think: 'I'll do it this way now because it is easier, and then I will put it in that neat LaTeX layout later'. That defeats most of the advantages.
+
+
+The two big reasons to use latex are
+
+It doesn't run like molasses on big documents.
+
+It handles equations in a sensible way. No clicking extremely tiny boxes, and you can type your symbols rather than clicking on them. That's a big time saver if you're needing a lot of equations.
+
+aside from the fact that that's simply not true, or at least not to the same extent as it is possible in LaTeX, why would learning syntax be a bad thing? Typing \alpha is much faster than looking it up in a list somewhere. Word can't perform typesetting procedures that high-end publishers use such as ligatures, microtype and consistent and accurate word-breaking at the end of the line. Good-looking equations in Word are a nightmare, and so are long documents
+
+Ok, so first off you will never really make a word document look professional in the same way you can make LaTeX documents look. And by that I mean you get the sciency feeling of it. It's a poor description, I know.
+
+It has quite a few perks, but it can quickly get messy too. It takes some time to learn, but when you know the ins and outs it's great. Perks being that it is quick to write formulas, chemical names, properties, a pixel precise way of handling figures and a neat way to arrange tables. None of that "oh shit something just moved two pages and all pictures are now on a different page" kind of stuff. Precision, I would say is the word(hah!).
+
+I guess it comes down to giving it a professional and scientific look, a little old school if you will, as well as having absolute precision in how things can look and be read.
+
+A very subjective post, but still!
+
+Edit: Oh yes! Vectors.
+Just my personal opinion. When I was a masters student in 2009, big word files with lots of pictures and graphics was always unstable, and saving them gave about 50% chance of a crash. So I opted for LaTeX. It has a steep learning curve as others have pointed out, but once you have a working document all you need to do is write and the result becomes beautiful.
+
+Nowadays word is much better at handling large documents so if you want to start writing right now you should use word. However, you will have to use some time towards the end of your writing time to adjust fonts, and other settings to make it look "right". Since I already had a working LaTeX file from my masters, it was much easier to pick up the treads when I wrote my PhD thesis. However, my PI and colleagues now like to use "track changes" in word and as such, they had to print out my document and correct it by hand.
+
+People who say it's useless have never either used it, or tried to create a large organised document. Let me ask you one question. Have you ever seen a publisher use word?
+
+One of the things I really like about LaTeX is it's almost self-documenting. This is related to what IamMaarten said about separating content from appearance. The formatting is embedded in the tex file. So if you did something but you can't remember how - just go back to a previous tex file where you used that, and it's all there. If you use a menu-driven GUI system, you have to remember which menu you clicked on, which item, what to change, all that.
+
+Along those lines, you can embed comments to yourself that won't print in the output file. Like if you found a mistake in a previous version, you could leave a comment line stating the date you found and fixed the error, and it won't print to the output file.
+
+Regarding plotting programs to use with LaTeX, I really like gnuplot, and it can create files easily linked in with LaTeX. Gnuplot is also free and there is really good documentation online, along with a lot of question and answer support on sites like StackOverflow.
+
+To add to my previous comment: LaTeX can do many things that Word can't, such as full support for vector images, in-pdf hyperlinking, advanced mathematical typesetting, good and efficient automatic referencing, reliable positioning and formatting of graphics, automatic correct typesetting of scientific units, if you want you can even draw your reaction mechanisms so you don't need something expensive like chemdraw
+
+The are a few e.g. smaller file size, searchable text, etc.
+
+I use the epstopdf package. As Maarten says, LaTeX can only use pdf, but with this package you can use eps as well. This is very handy as chemdraw can save pictures in EPS directly.
+
+Most of your points a great
+
+advanced mathematical typesetting
+good and efficient automatic referencing
+The equation editor is better than not having one at all, but I've had a number of situations where it drives me nuts, usually for getting sub/superscripts properly formatted in-line with text. LaTeX does much better.
+
+When I use the equation editor in PowerPoint, on several occasions the formula I was trying to enter suddenly became invisible mid-typing. This usually happens with larger and more complicated formulas. Not sure if anyone else has run into this as well.
+
+I think they mean referring to sections, tables, figures, etc. In LaTeX I label something by \label{[ref]} and then I can reference it by writing \ref{[ref]}. With hyperref it makes the reference clickable too.
+
+References are way easier with LaTex. I use doi2bib or Mendeleyto generate entries and once they're saved in the .bib file for the document it couldn't be easier.
+
+
