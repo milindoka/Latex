@@ -18,7 +18,7 @@
 \noindent
 \begin{fleqn} 
 
-%----------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Question: 01}
 A box is made with a square base and open top. The area of material for making the box is 300 sq. cm. Find the dimensions of the box, if its volume is maximum. Also find the maximum volume.
@@ -68,37 +68,52 @@ $\therefore$ Total surface area = $x^2+4h = 300\,cm^2$
 & Consequently \ Volume\ V = 500 \ cm^3 \\
 \end{alignedat}
 \end{equation}
-%----------------------------------------
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Question: 02}
-
-\begin{equation} \nonumber
-\begin{alignedat}{4}
-& Evlauate :\ \  \int \frac{x^5 - 4x^3 + 6x}{x}\ dx\\
-\end{alignedat}
-\end{equation}
-
+The slant height of a right circular cone is 3 cm. Find the height of cone, if its volume is the greatest.
 
 %----------------------------------------
 
 \section{Answer: 02}
+Let  r  and x  be the base-radius and the height of the cone respectively. Then the volume f(x) of the cone is given by
 
 \begin{equation} \nonumber
 \begin{alignedat}{4}
-& \quad \int \frac{x^5 - 4x^3 + 6x}{x}\ dx\\
-&= \int x^4 - 4x^2 +6)dx\\
+f(x) &= \frac{1}{3}\pi r^2x\\
+&= \frac{\pi}{3}(3^2-x^2)x\\
+&= \frac{\pi}{3}(9x - x^3)\\
+\therefore f'(x) &=  \frac{\pi}{3}(9 - 3x^2)\\
+\end{alignedat}
+%\vrule
+\quad\quad\quad
+\begin{alignedat}{4}
+\begin{tikzpicture}
+\draw (0,0) -- (0,2) -- (2,2) -- (2,4) -- (4,4) -- (4,2) -- (6,2) -- (6,0) -- (4,0) -- (4,-2) -- (2,-2) -- (2,0) -- (0,0) ; 
+\filldraw[fill=gray!20] (2,0) rectangle (4,2);
+\end{tikzpicture}
+\end{alignedat}
+\end{equation}
+\begin{equation} \nonumber
+\begin{alignedat}{4}
+& Now\ f'(x) = 0\ gives\\
+& \frac{\pi}{3}(9x - x^3)=0\\
+& \therefore \ 3x^2=9\\
+& \therefore x = \sqrt{10}
 \end{alignedat}
 \quad
 \vrule
 \quad
 \begin{alignedat}{4}
-\begin{tikzpicture}
-\draw (0,0) rectangle (3,3);
-\end{tikzpicture}
+& Also\ \ f''(x) =-6x\\
+& \therefore\ \ f''(\sqrt{3})=-6\sqrt{3}<0\\
+& \therefore \ \ By\ second\ derivative\ test\\
+& Volume \ f\ is maximum\ at\ x=\sqrt{3}
 \end{alignedat}
 \end{equation}
-\quad
-%----------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \end{fleqn}
