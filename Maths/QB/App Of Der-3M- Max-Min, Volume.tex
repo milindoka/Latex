@@ -3,6 +3,7 @@
 \usepackage{nccmath}
 \usepackage[a4paper, total={6.5in, 9in},top=2mm,left=27mm]{geometry}
 \usepackage{titlesec}
+\usepackage{tikz}
 
 
 %\titleformat*{\section}{\fontsize{17}{20}\selectfont}
@@ -28,6 +29,10 @@ A box is made with a square base and open top. The area of material for making t
 
 
 \section{Answer: 01}
+
+
+
+
 Let  'x'  be the side of a square base and  'h' be the height of the box.\\
 $\therefore$ Total surface area = $x^2+4h = 300\,cm^2$
 \[\therefore h = \frac{300 - x^2}{4x}\]
@@ -35,20 +40,28 @@ $\begin{aligned}[t]
 \hspace{0em}&\hspace{-0em}\text{Base Volume V}\\
 &= \text{Area of Base x Height}\\
 &= x^2\left(\frac{300-x^2}{4x}\right)\\
-&= \frac{1}{4}(300x - x^2) \\
+&= \frac{1}{4}(300x - x^2)
 \end{aligned}$
+
+
 
 \begin{equation} \nonumber
 \begin{alignedat}{4}
-& \quad \int \frac{x^5 - 4x^3 + 6x}{x}\ dx\\
-&= \int x^4 - 4x^2 +6)dx\\
+& \frac{dV}{dx}=\frac{1}{4}(300x - x^2) \\
+& But\  \frac{dV}{dx}= 0 \text{ for max}\\
+& \therefore \frac{1}{4}(300x - x^2)=0\\
+& \therefore x = \pm 10\\
+& \therefore x = 10 \ \ (+ve)
 \end{alignedat}
 \quad
 \vrule
 \quad
 \begin{alignedat}{4}
-&= \int x^4dx - 4\int x^2dx +\int 6\,dx\\
-&= \frac{x^5}{5}-4\frac{x^3}{3}+6x +c
+&= \left(\frac{d^2V}{dx^2}\right)_{x=10}=\left(\frac{-3x}{2}\right)_{x=10} = -15<0\\
+& \therefore \text{ V is max at x = 10 by 2nd derivative test}\\
+& \therefore Height\  h=But\  \frac{300 - (10)^2}{4(10)}= 5\ cm\\
+& \therefore Required\  dim = 5 \times  5 \times 10 \\
+& Consequently \ Volume\ V = 500 \ cm^3 \\
 \end{alignedat}
 \end{equation}
 %----------------------------------------
