@@ -56,9 +56,14 @@ Circle Macro bluecircle Called \\\\\\
       \draw[scale=0.5,domain=-3:3,smooth,variable=\x,blue] plot ({\x},{\x*\x});
       \draw[scale=0.5,domain=-3:3,smooth,variable=\y,red]  plot ({\y*\y},{\y});
     \end{tikzpicture}
-
-
-
+\\\\
+$y=5 - 4x -x^2 $
+\\\\
+\begin{tikzpicture}
+      \draw[->] (-3,0) -- (4.2,0) node[right] {$x$};
+      \draw[->] (0,-3) -- (0,4.2) node[above] {$y$};
+      \draw[scale=0.5,domain=-5:2,smooth,variable=\x,blue] plot (\x,{5 - 4*\x - \x*\x});
+    \end{tikzpicture}
 
 
 \end{document}
