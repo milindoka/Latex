@@ -39,15 +39,15 @@ Let OA and OB be the lines passing through the origin making an angle of
 \begin{alignedat}{4}
 \begin{tikzpicture}
 \draw [>={LaTeX[width=2mm,length=2.3mm]},<->](-3,0) -- (3,0);
-\draw [>={LaTeX[width=2mm,length=2.3mm]},->](0,-2) -- (0,3);
+\draw [>={LaTeX[width=2mm,length=2.3mm]},->](0,-2)  -- (0,3);
 \draw (-3,2) -- (3,2);
 \draw (-0.86,-1.5) -- (1.73,3);
 \draw (-1.73,3) -- (0.86,-1.5);
-
+\draw (0,0) node[anchor=north east,yshift=4pt] {$o$} ;
 %\filldraw[fill=green!20,draw=green!50!black] (0,0) -- (0.7,0) arc (0:60:0.7) -- cycle;
 
 \draw[-latex] (0:0.7cm) arc (0:60:0.7cm);
-%\draw (0,0) -- (1,0) arc (0:120:1) -- cycle;
+%\draw (0,0)  -- (1,0) arc (0:120:1) -- cycle;
 \draw[-latex] (0:1cm) arc (0:120:1cm);
 \end{tikzpicture}
 \end{alignedat}
