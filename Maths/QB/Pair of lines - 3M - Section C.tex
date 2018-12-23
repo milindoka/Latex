@@ -1,0 +1,137 @@
+\documentclass[17pt]{extarticle}
+\usepackage{amsmath, amssymb}
+\usepackage{nccmath}
+\usepackage[a4paper, total={6.5in, 10.5in},top=5mm,left=27mm]{geometry}
+\usepackage{titlesec}
+\usepackage{tikz}
+\usepackage{gensymb}
+\usetikzlibrary{arrows.meta}
+
+\titleformat{\section}
+{\normalfont\normalsize\bfseries}{\thesection}{1em}{}
+\setcounter{secnumdepth}{0} %% no numbering for sections
+
+\begin{document}
+\noindent
+\begin{fleqn} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Question: 01}
+Find the joint equation fo the pair of lines through the origin and making an equilateral triangle with the line $y = 3.$
+
+%----------------------------------------
+
+\section{Answer: 01}
+Let OA and OB be the lines passing through the origin making an angle of
+ $ 60\degree$ with the line $y = 3.$ \\
+$\therefore$ OA and OB make an angle of $60\degree$ and $ 120\degree$ with the positive direction of X-axis. 
+\begin{equation} \nonumber
+\begin{alignedat}{4}
+\text {Slope of line OA = tan}\ 60\degree = \sqrt{3} \\
+\therefore \text {Equation of the line OA is}\\  
+y= \sqrt{3}\ x \ i.e. \sqrt{3}\ x - y = 0 \\ 
+\text {Slope of line OB = tan 120\degree} \\
+\text {= tan (180 - 60)\degree} = \text{-tan}\ 60\degree\\
+\therefore \text {Slope of line OB} = -\sqrt{3} \\
+\therefore \text{Equation of the line OB is}\\  
+\end{alignedat}
+%\vrule
+\quad\quad
+\begin{alignedat}{4}
+\begin{tikzpicture}
+\draw [>={LaTeX[width=2mm,length=2.3mm]},<->](-3,0) -- (3,0); %% X-AXIS
+\draw [>={LaTeX[width=2mm,length=2.3mm]},->](0,-2)  -- (0,3); %% Y-AXIS
+\draw (-3,2) -- (3,2);
+\draw (-0.86,-1.5) -- (1.73,3);
+\draw (-1.73,3) -- (0.86,-1.5);
+\draw (0,0) node[anchor=north east,yshift=4pt] {$o$} ;
+\draw (0,0) node[anchor=north, xshift=45pt, yshift=77pt] {$A$} ;
+\draw (0,0) node[anchor=north, xshift=-47pt, yshift=77pt] {$B$}; 
+\draw (0,0) node[anchor=north, xshift=50pt, yshift=40pt, font=\scriptsize] {$120\degree$};
+\draw (0,0) node[anchor=north, xshift=25pt, yshift=20pt, font=\scriptsize] {$30\degree$};
+\draw[-latex] (0:0.6cm) arc (0:60:0.6cm);
+\draw[-latex] (0:1.5cm) arc (0:120:1.5cm);
+\end{tikzpicture}
+\end{alignedat}
+\end{equation}
+\quad
+
+
+\begin{equation} \nonumber
+\begin{alignedat}{4}
+y= -\sqrt{3}\ x \ \text {i.e.} \sqrt{3}\ x + y = 0 \\
+\therefore \text {The joint equation the lines is}\\
+\end{alignedat}
+\quad
+\vrule
+\quad
+\begin{alignedat}{4}
+\left( \sqrt{3}\ x - y\right) \left( \sqrt{3}\ x + y\right) = 0 \\
+i.e.\  3x^2 - y^2 = 0.
+\end{alignedat}
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Question: 02}
+Find the joint equation fo the pair of lines through the origin and making an equilateral triangle with the line $x = 3.$
+
+%----------------------------------------
+
+\section{Answer: 02}
+Let OA and OB be the lines passing through the origin making an angle of
+ $ 60\degree$ with the line $x = 3.$ \\
+$\therefore$ OA and OB make an angle of $30\degree$ and $150\degree$ with the positive direction of X-axis. 
+\begin{equation} \nonumber
+\begin{alignedat}{4}
+\text {Slope of line OA = tan}\ 30\degree = \frac{1}{\sqrt{3}} \\
+\therefore \text {Equation of the line OA is}\\  
+y= \frac{1}{\sqrt{3}}\ x \ i.e.\ x -\sqrt{3}\ y= 0 \\ 
+\text {Slope of line OB = tan 150\degree} \\
+\text {= tan (180 - 30)\degree} = \text{-tan}\ 30\degree\\
+\therefore \text {Slope of line OB} = -\frac{1}{\sqrt{3}} \\
+\end{alignedat}
+%\vrule
+\quad\quad
+\begin{alignedat}{4}
+\begin{tikzpicture}
+\draw [>={LaTeX[width=2mm,length=2.3mm]},<->](-2,0) -- (3.5,0); %% X-AXIS
+\draw [>={LaTeX[width=2mm,length=2.3mm]},->](0,-1)  -- (0,3); %% Y-AXIS
+\draw (3,2) -- (3,-2);
+\draw (-1.5, -0.86) -- (3.5,2.02);
+\draw (-1.5, 0.86) -- (3.5, -2.02);
+\draw (0,0) node[anchor=north east, xshift=3pt, yshift=-2pt] {$o$} ;
+\draw (0,0) node[anchor=north, xshift=75pt, yshift=65pt] {$A$} ;
+\draw (0,0) node[anchor=north, xshift=75pt, yshift=-42pt] {$B$}; 
+\draw (0,0) node[anchor=north, xshift=30pt, yshift=50pt, font=\scriptsize] {$150\degree$};
+\draw (0,0) node[anchor=north, xshift=30pt, yshift=16pt, font=\scriptsize] {$30\degree$};
+\draw (0,0) node[anchor=north, xshift=40pt, yshift=-2pt, font=\scriptsize] {$30\degree$};
+\draw[-latex] (0:0.7cm) arc (0:30:0.7cm);
+\draw[-latex] (0:1.3cm) arc (0:150:1.3cm);
+\draw[-latex] (0:1cm) arc (0:-30:1cm);
+\end{tikzpicture}
+\end{alignedat}
+\end{equation}
+\quad
+
+
+\begin{equation} \nonumber
+\begin{alignedat}{4}
+\therefore \text {Equation of the line OA is}\\  
+y= -\frac{1}{\sqrt{3}}\ x \ i.e.\ x + \sqrt{3}\ y= 0 \\ 
+\therefore \text {The joint equation the lines is}\\
+\end{alignedat}
+\quad
+\vrule
+\quad
+\begin{alignedat}{4}
+\left( x -\sqrt{3}\ y \right) \left( x +\sqrt{3}\ y \right) = 0 \\
+i.e.\  x^2 - 3y^2 = 0.
+\end{alignedat}
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{fleqn}
+\end{document} 
