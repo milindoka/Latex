@@ -1,7 +1,7 @@
 \documentclass[17pt]{extarticle}
 \usepackage{amsmath, amssymb}
 \usepackage{nccmath}
-\usepackage[a4paper, total={6.5in, 9.5in},top=2mm,left=27mm]{geometry}
+\usepackage[a4paper, total={6.5in, 10.5in},top=5mm,left=27mm]{geometry}
 \usepackage{titlesec}
 \usepackage{tikz}
 \usepackage{gensymb}
@@ -18,24 +18,26 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Question: 01}
-A box is made with a square base and open top. The area of material for making the box is 300 sq. cm. Find the dimensions of the box, if its volume is maximum. Also find the maximum volume.
+Find the joint equation fo the pair of lines through the origin and making an equilateral triangle with the line $y = 3.$
 
 %----------------------------------------
 
 \section{Answer: 01}
 Let OA and OB be the lines passing through the origin making an angle of
  $ 60\degree$ with the line $y = 3.$ \\
-
+$\therefore$ OA and OB make an angle of $60\degree$ and $ 120\degree$ with the positive direction of X-axis. 
 \begin{equation} \nonumber
 \begin{alignedat}{4}
-& \therefore h = \frac{300 - x^2}{4x}\\
-& \text{ Base Volume V} \\
-&= \text{Area of Base x Height}\\
-&= x^2\left(\frac{300-x^2}{4x}\right)\\
-&= \frac{1}{4}(300x - x^2)
+\text {Slope of line OA = tan}\ 60\degree = \sqrt{3} \\
+\therefore \text {Equation of the line OA is}\\  
+y= \sqrt{3}\ x \ i.e. \sqrt{3}\ x - y = 0 \\ 
+\text {Slope of line OB = tan 120\degree} \\
+\text {= tan (180 - 60)\degree} = \text{-tan}\ 60\degree\\
+\therefore \text {Slope of line OB} = -\sqrt{3} \\
+\therefore \text{Equation of the line OB is}\\  
 \end{alignedat}
 %\vrule
-\quad\quad\quad
+\quad\quad
 \begin{alignedat}{4}
 \begin{tikzpicture}
 \draw [>={LaTeX[width=2mm,length=2.3mm]},<->](-3,0) -- (3,0);
@@ -44,10 +46,7 @@ Let OA and OB be the lines passing through the origin making an angle of
 \draw (-0.86,-1.5) -- (1.73,3);
 \draw (-1.73,3) -- (0.86,-1.5);
 \draw (0,0) node[anchor=north east,yshift=4pt] {$o$} ;
-%\filldraw[fill=green!20,draw=green!50!black] (0,0) -- (0.7,0) arc (0:60:0.7) -- cycle;
-
 \draw[-latex] (0:0.7cm) arc (0:60:0.7cm);
-%\draw (0,0)  -- (1,0) arc (0:120:1) -- cycle;
 \draw[-latex] (0:1cm) arc (0:120:1cm);
 \end{tikzpicture}
 \end{alignedat}
@@ -57,21 +56,68 @@ Let OA and OB be the lines passing through the origin making an angle of
 
 \begin{equation} \nonumber
 \begin{alignedat}{4}
-& \frac{dV}{dx}=\frac{1}{4}(300x - x^2) \\
-& But\  \frac{dV}{dx}= 0 \text{ for max}\\
-& \therefore \frac{1}{4}(300x - x^2)=0\\
-& \therefore x = \pm 10\\
-& \therefore x = 10 \ \ (+ve)
+y= -\sqrt{3}\ x \ i.e. \sqrt{3}\ x + y = 0 \\
+\therefore \text {The joint equation the lines is}\\
 \end{alignedat}
 \quad
 \vrule
 \quad
 \begin{alignedat}{4}
-&= \left(\frac{d^2V}{dx^2}\right)_{x=10}=\left(\frac{-3x}{2}\right)_{x=10} = -15<0\\
-& \therefore \text{ V is max at x = 10 by 2nd derivative test}\\
-& \therefore Height\  h=But\  \frac{300 - (10)^2}{4(10)}= 5\ cm\\
-& \therefore Required\  dim = 5 \times  5 \times 10 \\
-& Consequently \ Volume\ V = 500 \ cm^3 \\
+\left( \sqrt{3}\ x - y\right) \left( \sqrt{3}\ x + y\right) = 0 \\
+i.e.\  3x^2 - y^2 = 0.
+\end{alignedat}
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Question: 02}
+Find the joint equation fo the pair of lines through the origin and making an equilateral triangle with the line $x = 3.$
+
+%----------------------------------------
+
+\section{Answer: 02}
+Let OA and OB be the lines passing through the origin making an angle of
+ $ 60\degree$ with the line $y = 3.$ \\
+$\therefore$ OA and OB make an angle of $60\degree$ and $ 120\degree$ with the positive direction of X-axis. 
+\begin{equation} \nonumber
+\begin{alignedat}{4}
+\text {Slope of line OA = tan}\ 60\degree = \sqrt{3} \\
+\therefore \text {Equation of the line OA is}\\  
+y= \sqrt{3}\ x \ i.e. \sqrt{3}\ x - y = 0 \\ 
+\text {Slope of line OB = tan 120\degree} \\
+\text {= tan (180 - 60)\degree} = \text{-tan}\ 60\degree\\
+\therefore \text {Slope of line OB} = -\sqrt{3} \\
+\therefore \text{Equation of the line OB is}\\  
+\end{alignedat}
+%\vrule
+\quad\quad
+\begin{alignedat}{4}
+\begin{tikzpicture}
+\draw [>={LaTeX[width=2mm,length=2.3mm]},<->](-3,0) -- (3,0);
+\draw [>={LaTeX[width=2mm,length=2.3mm]},->](0,-2)  -- (0,3);
+\draw (-3,2) -- (3,2);
+\draw (-0.86,-1.5) -- (1.73,3);
+\draw (-1.73,3) -- (0.86,-1.5);
+\draw (0,0) node[anchor=north east,yshift=4pt] {$o$} ;
+\draw[-latex] (0:0.7cm) arc (0:60:0.7cm);
+\draw[-latex] (0:1cm) arc (0:120:1cm);
+\end{tikzpicture}
+\end{alignedat}
+\end{equation}
+\quad
+
+
+\begin{equation} \nonumber
+\begin{alignedat}{4}
+y= -\sqrt{3}\ x \ i.e. \sqrt{3}\ x + y = 0 \\
+\therefore \text {The joint equation the lines is}\\
+\end{alignedat}
+\quad
+\vrule
+\quad
+\begin{alignedat}{4}
+\left( \sqrt{3}\ x - y\right) \left( \sqrt{3}\ x + y\right) = 0 \\
+i.e.\  3x^2 - y^2 = 0.
 \end{alignedat}
 \end{equation}
 
