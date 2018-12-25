@@ -2,6 +2,7 @@
 \usepackage{tikz}
 \usepackage{tabularx} % in the preamble
 \usepackage{showexpl}
+\usepackage{comment}
 \lstset
 {
     language=[LaTeX]TeX,
@@ -12,7 +13,9 @@
 }
 
 \begin{document}
-This is inline \lstinline!\TeX! and the following is displayed 
+\section {Ciricle and Colour.}
+
+\begin{comment}
 
 \begin{lstlisting}
 \documentclass{article}
@@ -20,6 +23,8 @@ This is inline \lstinline!\TeX! and the following is displayed
 Hello World
 \end{document}
 \end{lstlisting}
+
+\end{comment}
 
 
 \begin{LTXexample}[pos=b,preset=\centering,width=0.5\linewidth]
@@ -29,17 +34,6 @@ Hello World
 \end{LTXexample}
 
 
-\begin{tabularx}{\textwidth}{|X|c|}
-\hline
-\textbf{Code} & \textbf{Diagram} \\
-\hline
-
-&
-\begin{tikzpicture}
-\draw (0,0) circle (1cm); 
-\end{tikzpicture}\\
-\hline
-\end{tabularx}
 
 \begin{LTXexample}[pos=b,preset=\centering,width=0.5\linewidth]
 \begin{tikzpicture}
