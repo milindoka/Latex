@@ -34,21 +34,18 @@
 \end{tikzpicture}
 
 % ....
-\begin{tabularx}{\textwidth}{X|l}
+\begin{tabularx}{\textwidth}{|X|c|}
 \hline
-  \textbf{Code} & \textbf{Diagram} \\
+\textbf{Code} & \textbf{Diagram} \\
 \hline
-Class that has many accessor methods and accesses a lot of external data & 
-
+\texttt{
+shade (0,0) circle (2cm); 
+} 
+&
 \begin{tikzpicture}
-\shade (0,0) rectangle (2,1)
-(3,0.5) circle (.5cm); 
-\end{tikzpicture}
-
-
-ATFD is more than a few\\
-Class that is large and complex & WMC is high\\
-Class that has a lot of methods that only operate on a proper subset of the instance variable set & TCC is low\\
+\draw (0,0) circle (1cm); 
+\end{tikzpicture}\\
+\hline
 \end{tabularx}
 
 

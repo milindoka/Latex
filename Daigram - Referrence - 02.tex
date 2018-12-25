@@ -1,0 +1,51 @@
+\documentclass[17pt]{extarticle}
+\usepackage{tikz}
+\usepackage{tabularx} % in the preamble
+\usepackage{showexpl}
+\lstset
+{
+    language=[LaTeX]TeX,
+    breaklines=true,
+    basicstyle=\fontsize{14}{11}\ttfamily,
+    keywordstyle=\color{blue},
+    identifierstyle=\color{magenta},
+}
+
+\begin{document}
+This is inline \lstinline!\TeX! and the following is displayed 
+
+\begin{lstlisting}
+\documentclass{article}
+\begin{document}
+Hello World
+\end{document}
+\end{lstlisting}
+
+
+\begin{LTXexample}[pos=b,preset=\centering,width=0.5\linewidth]
+\begin{tikzpicture}
+    \draw[fill=red] (0,0) circle (1);
+\end{tikzpicture}
+\end{LTXexample}
+
+
+\begin{tabularx}{\textwidth}{|X|c|}
+\hline
+\textbf{Code} & \textbf{Diagram} \\
+\hline
+
+&
+\begin{tikzpicture}
+\draw (0,0) circle (1cm); 
+\end{tikzpicture}\\
+\hline
+\end{tabularx}
+
+\begin{LTXexample}[pos=b,preset=\centering,width=0.5\linewidth]
+\begin{tikzpicture}
+    \draw[fill=red] (0,0) circle (1);
+\end{tikzpicture}
+\end{LTXexample}
+
+
+\end{document}
