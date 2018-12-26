@@ -2,29 +2,25 @@
 \usepackage{amsmath, amssymb}
 \usepackage{nccmath}
 \usepackage[a4paper, total={6.5in, 9in},top=2mm,left=27mm]{geometry}
-\usepackage{titlesec}
+
 \usepackage{tikz}
 
+%\usepackage{titlesec}
 
-%\titleformat*{\section}{\fontsize{17}{20}\selectfont}
-
-
-\titleformat{\section}
-{\normalfont\normalsize\bfseries}{\thesection}{1em}{}
-\setcounter{secnumdepth}{0} %% no numbering for sections
 
 \begin{document}
+
 \noindent
 \begin{fleqn} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Question: 01}
+\section{Question}
 A box is made with a square base and open top. The area of material for making the box is 300 sq. cm. Find the dimensions of the box, if its volume is maximum. Also find the maximum volume.
 
 %----------------------------------------
 
-\section{Answer: 01}
+\subsection*{Answer}
 Let  'x'  be the side of a square base and 'h' be the height of the box.\
 $\therefore$ Total surface area = $x^2+4h = 300\,cm^2$
 
@@ -72,12 +68,12 @@ $\therefore$ Total surface area = $x^2+4h = 300\,cm^2$
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Question: 02}
+\section{Question}
 The slant height of a right circular cone is 3 cm. Find the height of cone, if its volume is the greatest.
 
 %----------------------------------------
 
-\section{Answer: 02}
+\subsection*{Answer}
 Let  r  and x  be the base-radius and the height of the cone respectively. Then the volume f(x) of the cone is given by
 
 \begin{equation} \nonumber
@@ -92,8 +88,8 @@ f(x) &= \frac{1}{3}\pi r^2x\\
 \begin{alignedat}{4}
 \begin{tikzpicture}
 \filldraw[fill=gray!20](0,0) ellipse (2cm and 0.6cm);
-\draw (0,0) -- node[below] {\ \ \ x}(0,3.5);
-\draw (0,0)  -- node[below] {\ \ \ r} (-2,0);
+\draw (0,0) -- node[below] {\ \ \ $x$}(0,3.5);
+\draw (0,0)  -- node[below] {\ \ \ $r$} (-2,0);
 \draw  (-2,0) --node[above] {3\ \ }(0,3.5);
 \draw  (2,0) -- (0,3.5);
 \end{tikzpicture}\\\\
