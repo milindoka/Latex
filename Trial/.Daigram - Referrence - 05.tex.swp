@@ -1,6 +1,8 @@
 \documentclass[17pt]{extarticle}
 \usepackage{tikz}
 \usepackage{showexpl}
+\usepackage{gensymb}
+\usetikzlibrary{arrows.meta}
 \usepackage[top=0.2in,left=0.9in]{geometry} %This geometry is page layout
 \usepackage{titlesec}
 \lstset
@@ -35,24 +37,48 @@
   \end{tikzpicture}
 \end{LTXexample}
 
-\section {red circle}
-\begin{LTXexample}[pos=b,preset=\centering,width=1\linewidth]
+\pagebreak
+\section {Pair Of Straight Lines}
 
+\begin{lstlisting}
+=====================
+Requires :
+{\usepackage{gensymb}
+\usetikzlibrary{arrows.meta}
+==============
+\end{lstlisting}
+
+
+\begin{LTXexample}[pos=b,preset=\centering,width=1\linewidth]
 \begin{tikzpicture}
-    \draw[fill=red] (0,0) circle (1);
+\draw [>={LaTeX[width=2mm,length=2.3mm]},<->](-3,0) -- (3,0); %% X-AXIS
+\draw [>={LaTeX[width=2mm,length=2.3mm]},->](0,-2)  -- (0,3); %% Y-AXIS
+\draw (-3,2) -- (3,2);
+\draw (-0.86,-1.5) -- (1.73,3);
+\draw (-1.73,3) -- (0.86,-1.5);
+\draw (0,0) node[anchor=north east,yshift=4pt] {$o$} ;
+\draw (0,0) node[anchor=north, xshift=45pt, yshift=77pt] {$A$} ;
+\draw (0,0) node[anchor=north, xshift=-47pt, yshift=77pt] {$B$}; 
+\draw (0,0) node[anchor=north, xshift=50pt, yshift=40pt, font=\scriptsize] {$120\degree$};
+\draw (0,0) node[anchor=north, xshift=25pt, yshift=20pt, font=\scriptsize] {$30\degree$};
+\draw[-latex] (0:0.6cm) arc (0:60:0.6cm);
+\draw[-latex] (0:1.5cm) arc (0:120:1.5cm);
 \end{tikzpicture}
 
 \end{LTXexample}
 
 
 
-\section {red circle}
+\pagebreak
+\section {Cube - Unfolded}
+
 \begin{LTXexample}[pos=b,preset=\centering,width=1\linewidth]
-
+\vspace*{4mm} %to keep box edge little away
 \begin{tikzpicture}
-    \draw[fill=red] (0,0) circle (1);
+\draw (0,0) -- (0,2) -- (2,2) -- (2,4) -- (4,4) -- (4,2) -- (6,2) -- (6,0) -- (4,0) -- (4,-2) -- (2,-2) -- (2,0) -- (0,0) ; 
+\filldraw[fill=gray!20] (2,0) rectangle (4,2);
 \end{tikzpicture}
-
+\vspace*{4mm} %to keep box edge little away
 \end{LTXexample}
 
 

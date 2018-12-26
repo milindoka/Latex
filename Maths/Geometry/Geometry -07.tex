@@ -17,12 +17,14 @@ Geometry Shapes :
 
 
 \begin{tikzpicture}
-\draw (0,0) circle(2);
+
+\draw (0,0) node[below right] {$o$} circle(2);
 \draw (-3,0) -- (3,0);
 \draw (0,-3) -- (0,3);
 
 %Green Fill Arc
 \filldraw[fill=green!20,draw=green!50!black] (0,0) -- (2,0) arc (0:60:2) -- cycle;
+
  \end{tikzpicture}
 \begin{tikzpicture}
 \node[draw, circle, fill=yellow!30, inner sep=2mm] (a) {B};
