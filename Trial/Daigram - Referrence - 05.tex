@@ -3,11 +3,10 @@
 \usepackage{showexpl}
 \usepackage{gensymb}
 \usetikzlibrary{arrows.meta}
-\usepackage[top=0.2in,left=0.9in]{geometry} %This geometry is page layout
+\usepackage[top=0.2in,left=0.9in,right=1cm]{geometry} %This geometry is page layout
 \usepackage{titlesec}
 \lstset
-{
-    language=[LaTeX]TeX,
+{   language=[LaTeX]TeX,
     breaklines=true,
     basicstyle=\fontsize{14}{14}\ttfamily,
     keywordstyle=\color{blue},
@@ -26,8 +25,7 @@
      (-2, 0) -- plot ({\x}, {\x*\x}) -- (2, 0) -- cycle;
     \draw [thick] [->] (-5,0)--(5,0) node[right, below] {$x$};
      \foreach \x in {-4,...,4}
-       \draw[xshift=\x cm, thick] 
-       (0pt,-1pt)--(0pt,1pt) node[below] {$\x$};
+       \draw[xshift=\x cm, thick] (0pt,-1pt)--(0pt,1pt) node[below] {$\x$};
       \draw [thick] [->] (0,-4)--(0,4) node[above, left] {$y$};
      \foreach \y in {-3,...,3}
        \draw[yshift=\y cm, thick] (-1pt,0pt)--(1pt,0pt) node[left] {$\y$};
@@ -80,6 +78,23 @@ Requires :
 \end{tikzpicture}
 \vspace*{4mm} %to keep box edge little away
 \end{LTXexample}
+
+
+\pagebreak
+\section {Cone}
+
+\begin{LTXexample}[pos=b,preset=\centering,width=1\linewidth]
+\vspace*{4mm} %to keep box edge little away
+\begin{tikzpicture}
+\filldraw[fill=gray!20](0,0) ellipse (2cm and 0.6cm);
+\draw (0,0) -- node[below] {\ \ \ $x$}(0,3.5);
+\draw (0,0)  -- node[below] {\ \ \ $r$} (-2,0);
+\draw  (-2,0) --node[above] {3\ \ }(0,3.5);
+\draw  (2,0) -- (0,3.5);
+\end{tikzpicture}
+\vspace*{4mm} %to keep box edge little away
+\end{LTXexample}
+
 
 
 
