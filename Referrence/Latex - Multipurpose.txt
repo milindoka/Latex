@@ -1,0 +1,19 @@
+
+https://tex.stackexchange.com/questions/383292/all-uses-of-latex-i-never-use-latex-except-for
+
+Here are some of the things I've used LaTeX for:
+
+Text books. Primary dependencies: KOMA-Script, glossaries and flowfram.
+Novels. Primary dependencies: memoir and microtype.
+Illustrated children's books. Primary dependencies: flowfram and extsizes.
+Presentations. Primary dependency: beamer.
+Correspondence (letters, invoices and quotes). Primary dependency: custom class based on letter.
+Business cards. Primary dependency: tikz.
+Press releases. Primary dependency: pressrelease.
+Promotional postcards. Primary dependency: flowfram.
+Advance information sheets. Primary dependency: flowfram.
+Posters. Primary dependency: tikz or flowfram.
+Brochures. Primary dependency: flowfram.
+Newsletters. Primary dependency: flowfram.
+Limited overs cricket score sheet. Primary dependency: custom class based on article.
+Poetry (just part of a creative writing course, so no serious use). Primary dependency: article and verse in most cases, but shapepar in one case with the assistance of flowframtk (for a poem about a dripping tap where each verse was shaped like a drop of water).
