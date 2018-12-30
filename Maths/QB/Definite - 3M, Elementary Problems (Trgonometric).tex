@@ -29,23 +29,20 @@ $\begin{aligned}[t]
 \begin{alignedat}{4}
 & \quad  \int_{0}^{\frac{\pi}{2}} \frac{\sin^2x}{(1 + \cos x)^2}\ dx\\
 &= \int_{0}^{\frac{\pi}{2}} \frac{1 -\cos^2x}{(1 + \cos x)^2}\ dx\\
-&= \int_{0}^{1}\,\frac{2dt}{3(1+t^2) + 2(1-t^2)}\\
+&= \int_{0}^{\frac{\pi}{2}} \frac{(1 -\cos x)(1 +\cos x)}{(1 + \cos x)^2}\ dx\\
+&= \int_{0}^{\frac{\pi}{2}} \frac{1 -\cos x}{1 + \cos x}\ dx\\
+&= \int_{0}^{\frac{\pi}{2}} \frac{2\sin^2\frac{x}{2}}{2\cos^2\frac{x}{2}}\ dx\\
 \end{alignedat}
+\quad
+\vrule
+\quad
 \begin{alignedat}{4}
-    \addtolength{\fboxsep}{5pt}
-    \boxed{
-     \begin{split}
-       & \text{Put } \tan \tfrac{x}{2}=t\\
-       & \ \therefore dx =\frac{2dt}{1 + t^2}\\
-        & \cos x =  \frac{1 - t^2}{1 + t^2}\\
-         & \text{At } x=0,\  t=0\\
-         & \text{At } x=\tfrac{\pi}{2},\  t=1\\
-        \end{split}
-     }\end{alignedat}
-\begin{alignedat}{4}
-&= \int_{0}^{1}\frac{2dt}{5+t^2}\\
-&= \left[\frac{2}{\sqrt{5}}\tan^{-1}\left(\frac{t}{\sqrt{5}}\right)\right]_{0}^{1}\\
-&= \frac{2}{\sqrt{5}}\tan^{-1}\left(\frac{1}{\sqrt{5}}\right)\\
+&= \int_{0}^{\frac{\pi}{2}} \tan^2\frac{x}{2}\ dx\\
+&= \int_{0}^{\frac{\pi}{2}} \left(\sec^2\frac{x}{2}-1\right)dx\\
+&= \left[2\tan\frac{x}{2}-x\right]_{0}^{\frac{\pi}{2}}\\
+&= \left[2\tan\frac{\pi}{4}-\frac{\pi}{2}\right]-\left[2\tan 0 - 0 \right]\\
+&= \left[2 -\frac{\pi}{2}\right]-\left[0 - 0 \right]\\
+&= 2 -\frac{\pi}{2}
 \end{alignedat}
 \end{equation}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
