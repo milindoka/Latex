@@ -1,0 +1,95 @@
+\documentclass[17pt]{extarticle}
+\usepackage{amsmath, amssymb}
+\usepackage{nccmath}
+\usepackage[a4paper, total={8in, 11.38in},top=2mm,left=27mm,bottom=2mm,right=5mm]{geometry}
+\usepackage{tikz}
+
+\usepackage{titlesec}
+\titleformat{\section}
+{\normalfont\normalsize\bfseries}{\thesection}{1em}{}
+
+\titleformat{\subsection}
+{\normalfont\normalsize\bfseries}{\thesection}{1em}{}
+
+\usepackage{mathtools}
+
+\usepackage{tasks}
+
+\begin{document}
+
+\noindent
+\begin{fleqn} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Question} 
+
+$\begin{aligned}[t] 
+\text{If \ } y = \cot^{-1} \left[ \frac{\log \, (ex^{-1})}{\log\,(ex)} \right] \text{\quad then\quad}
+\frac{dy}{dx} = \cdots 
+\end{aligned}$
+
+\settasks{counter-format={(tsk[a])},label-offset=1em}
+\begin{tasks}(2)
+  \task $\dfrac{\pi}{4} + \dfrac{1}{1+ (\log x)^2}$ 
+  \task $\tan^{-1}1 + \dfrac{1}{1+ (\log x)^2}$ 
+  \task $\dfrac{1}{x\left[1+ (\log x)^2\right]}$ 
+  \task $\dfrac{1}{x\left[1+ (\log x)^2\right]^2}$ 
+\end{tasks}
+%----------------------------------------
+\subsection*{Answer : (c)}
+\begin{equation} \nonumber
+\begin{alignedat}{4}
+y &= \cot^{-1} \left[ \frac{\log \, (ex^{-1})}{\log\,(ex)} \right]\\
+&= \cot^{-1} \left[ \frac{\log e + \log x^{-1}}{\log e + \log x} \right]\\
+&= \cot^{-1} \left[ \frac{1 - \log x}{1 + \log x} \right]\\
+&= \tan^{-1} \left[ \frac{1 + \log x}{1 - \log x} \right]\\
+\end{alignedat}
+\quad
+\vrule
+\quad
+\begin{alignedat}{4}
+&= \tan^{-1}1 + \tan^{-1}(\log x)\\
+\text{Hence}\\ 
+\frac{dy}{dx} &= \frac{d}{dx}(\tan^{-1}1)+\frac{d}{dx}(\tan^{-1}(\log x) \\
+&= 0 + \frac {1}{1 + (\log x)^2}\, \frac{d}{dx}(\log x) \\
+&= \frac {1}{x\left[1 + (\log x)^2 \right]}\\
+\end{alignedat}
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Question} 
+
+$\begin{aligned}[t] 
+\text{If \ } \frac{1}{4} (3x^2 + bx + 5) dx = 93\ , \text{ then the value of 'b' is } \cdots
+\end{aligned}$
+
+\settasks{counter-format={(tsk[a])},label-offset=1em}
+\begin{tasks}(4)
+  \task -2 
+  \task 2 
+  \task 3 
+  \task \text{none of these}
+\end{tasks}
+%----------------------------------------
+\subsection*{Answer : (b)}
+\begin{equation} \nonumber
+\begin{alignedat}{4}
+& \int_{1}^{4} (3x^2 + bx + 5) dx = 93\\
+& \therefore \left[ x^3 +\frac{bx^2}{2}+5\right]_{1}^{4} = 93\\
+& \therefore [64+8b+20] - \left[ 1 + \frac{b}{2} + 5\right]=93\\
+\end{alignedat}
+\quad
+\vrule
+\quad
+\begin{alignedat}{4}
+& \therefore 78+\frac{15b}{2} = 93\\
+& \therefore \frac{15b}{2} = 15\\
+& \therefore b=2\\
+\end{alignedat}
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\end{fleqn}
+\end{document} 

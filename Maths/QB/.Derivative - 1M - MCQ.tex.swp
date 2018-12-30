@@ -25,48 +25,35 @@
 \section{Question} 
 
 $\begin{aligned}[t] 
-\text{If \ } \int_{a}^{b} x^2 dx = \frac{2}{3} 
-\text{\quad and\quad} 
-\int_{a}^{b} x^3 dx = 0 
-\text{\quad then\quad}
-\int_{a}^{b} x^4 dx = \cdots
+\text{If \ } y = \cot^{-1} \left[ \frac{\log \, (ex^{-1})}{\log\,(ex)} \right] \text{\quad then\quad}
+\frac{dy}{dx} = \cdots 
 \end{aligned}$
 
 \settasks{counter-format={(tsk[a])},label-offset=1em}
-\begin{tasks}(4)
-  \task $\dfrac{-2}{5}$ 
-  \task $\dfrac{2}{5}$ 
-  \task $\dfrac{1}{5}$ 
-  \task $\dfrac{2^5}{5}$
+\begin{tasks}(2)
+  \task $\dfrac{\pi}{4} + \dfrac{1}{1+ (\log x)^2}$ 
+  \task $\tan^{-1}1 + \dfrac{1}{1+ (\log x)^2}$ 
+  \task $\dfrac{1}{x\left[1+ (\log x)^2\right]}$ 
+  \task $\dfrac{1}{x\left[1+ (\log x)^2\right]^2}$ 
 \end{tasks}
 %----------------------------------------
-\subsection*{Answer : (b)}
+\subsection*{Answer : (c)}
 \begin{equation} \nonumber
 \begin{alignedat}{4}
-& Given \int_{a}^{b} x^2 dx = \frac{2}{3}\\
-& \therefore \left[ \frac{x^3}{3}\right]_{a}^{b} = \frac{2}{3}\\
-& \therefore \frac{1}{3}[b^3 - a^3] = \frac{2}{3}\\
-& \therefore b^3 - a^3=2 \quad \cdots (1)\\
-& Also \int_{a}^{b} x^3 dx = 0\\
-& \therefore \left[ \frac{x^4}{4}\right]_{a}^{b} = 0\\
-& \therefore \frac{1}{4}[b^4 - a^4) = 0\\
-& \therefore (b^2 - a^2)(b^2+a^2)=0 \\
+y &= \cot^{-1} \left[ \frac{\log \, (ex^{-1})}{\log\,(ex)} \right]\\
+&= \cot^{-1} \left[ \frac{\log e + \log x^{-1}}{\log e + \log x} \right]\\
+&= \cot^{-1} \left[ \frac{1 - \log x}{1 + \log x} \right]\\
+&= \tan^{-1} \left[ \frac{1 + \log x}{1 - \log x} \right]\\
 \end{alignedat}
 \quad
 \vrule
 \quad
 \begin{alignedat}{4}
-& \therefore b^2 - a^2=0 \because b^2+a^2 \neq 0\\
-& \therefore b^2 = a^2\\
-& \therefore b = \pm a\\
-& But \quad b \neq a \\
-& \therefore b = -a \quad \cdots (2) \\
-& \therefore (-a)^3 - a^3=2 \quad \cdots From\ (1) \\
-& \therefore -2a^3=2 \\
-& \therefore a = -1 \\
-& \therefore b = 1 \quad \cdots From\ (2) \\
-& Hence \int_{-1}^{1} x^4 dx = \left[ \frac{x^4}{4}\right]_{-1}^{1}\\
-& = \frac{2}{5}
+&= \tan^{-1}1 + \tan^{-1}(\log x)\\
+\text{Hence}\\ 
+\frac{dy}{dx} &= \frac{d}{dx}(\tan^{-1}1)+\frac{d}{dx}(\tan^{-1}(\log x) \\
+&= 0 + \frac {1}{1 + (\log x)^2}\, \frac{d}{dx}(\log x) \\
+&= \frac {1}{x\left[1 + (\log x)^2 \right]}\\
 \end{alignedat}
 \end{equation}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -74,7 +61,7 @@ $\begin{aligned}[t]
 \section{Question} 
 
 $\begin{aligned}[t] 
-\text{If \ } \int_{1}^{4} (3x^2 + bx + 5) dx = 93\ , \text{ then the value of 'b' is } \cdots
+\text{If \ } \frac{1}{4} (3x^2 + bx + 5) dx = 93\ , \text{ then the value of 'b' is } \cdots
 \end{aligned}$
 
 \settasks{counter-format={(tsk[a])},label-offset=1em}
