@@ -1,0 +1,87 @@
+\documentclass[17pt]{extarticle}
+\usepackage{amsmath, amssymb}
+\usepackage{nccmath}
+\usepackage[a4paper, total={8in, 11.38in},top=2mm,left=27mm,bottom=2mm,right=5mm]{geometry}
+\usepackage{tikz}
+
+\usepackage{titlesec}
+\titleformat{\section}
+{\normalfont\normalsize\bfseries}{\thesection}{1em}{}
+
+\titleformat{\subsection}
+{\normalfont\normalsize\bfseries}{\thesection}{1em}{}
+
+\usepackage{mathtools}
+
+\usepackage{tasks}
+
+\begin{document}
+
+\noindent
+\begin{fleqn} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Question 01} 
+$\begin{aligned}[t] 
+\text {Write converse of "If x is zero then we can not devide by x" } 
+\end{aligned}$
+
+\settasks{counter-format={(tsk[a])},label-offset=1em}
+\begin{tasks}
+  \task If x is not zero then we can devide by x 
+  \task If we can not devide by x then x is not zero 
+  \task If we can not devide by x then x is zero
+  \task If we can devide by x then x is not zero
+\end{tasks}
+%----------------------------------------
+\subsection*{Answer : (c)}
+\begin{equation} \nonumber
+\text {If we can not devide by x then x is zero}
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Question 02} 
+
+$\begin{aligned}[t] 
+\text {Write Inverse of "If a triangle is equilateral, then it is equiangular" } 
+\end{aligned}$
+
+\settasks{counter-format={(tsk[a])},label-offset=1em}
+\begin{tasks}
+  \task If a triangle is not equilateral, then it is not equiangular 
+  \task If a triangle is not equiangular, then it is not equilateral 
+  \task If a triangle is not equilateral, then it is equiangular
+  \task If a triangle is not equiangular, then it is equilateral
+\end{tasks}
+%----------------------------------------
+\subsection*{Answer : (a)}
+\begin{equation} \nonumber
+\text {If a triangle is not equilateral, then it is not equiangular}
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Question 03} 
+
+$\begin{aligned}[t] 
+\text {Write contrapositive of "If a sequence is bounded then it is convergent" } 
+\end{aligned}$
+
+\settasks{counter-format={(tsk[a])},label-offset=1em}
+\begin{tasks}
+  \task If a sequence is not bounded then it is not convergent 
+  \task If a sequence is convergent then it is bounded 
+  \task If a sequence is convergent then it is not bounded
+  \task If a sequence is not convergent then it is not bounded
+\end{tasks}
+%----------------------------------------
+\subsection*{Answer : (a)}
+\begin{equation} \nonumber
+\text {Let p : A sequence is bounded }
+\text {L}
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\end{fleqn}
+\end{document} 
