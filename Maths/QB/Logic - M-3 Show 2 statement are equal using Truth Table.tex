@@ -75,6 +75,43 @@ $p$ & $q$ & $p\land q$ & $ \sim q$ & $p\to \sim q$ & $\sim(p \to \sim q)$\\
 \end{tabular} \\ \\
 All the entries ofcolumn(A) and column(B) are identical \\
 $\therefore$ \ $(p \wedge q) $ $ \equiv \ \sim(p \to \sim q)$ 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Question}
+Using truth table show that $(p \wedge q) \to r$ $ \equiv \ p \to (q \to r)$ 
+
+%----------------------------------------
+
+\section{Solution}
+The truth table for the given statement pattern is as follows \\
+\begin{tabular}{|c*{7}{c|}}
+\multicolumn{4}{c}{}&
+\multicolumn{1}{c}{%
+  $\overbrace{\hphantom{(p\land q)\lto p}}^{\textbf{(A)}}$ %
+}
+&\multicolumn{1}{c}{}&
+\multicolumn{1}{c}{%
+  $\overbrace{\hphantom{p\lto (p\lor q)}}^{\textbf{(B)}}$%
+}\\
+\hline
+$p$ & $q$ & $r$ & $p\land q$ & $ (p \wedge q) \to r$ & $q\to r$ & $p \to (q \to r)$\\
+\hline
+ T & T & T & T & T & T & T\\
+ T & T & F & T & F & F & F\\
+ T & F & T & F & T & T & T\\
+ T & F & F & F & T & T & T\\
+ F & T & T & F & T & T & T\\
+ F & T & F & F & T & F & T\\
+ F & F & T & F & T & T & T\\
+ F & F & F & F & T & T & T\\
+ \hline
+\end{tabular} \\ \\
+All the entries ofcolumn(A) and column(B) are identical \\
+$\therefore$ \ $(p \wedge q) \to r$ $ \equiv \ p \to (q \to r)$ 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{equation} \nonumber
 \end{equation}
 
