@@ -21,23 +21,23 @@
 \section{Question} 
 
 $\begin{aligned}[t] 
-\text{If \ } y =  \sin^{-1}\left(\frac{4\sin x + 3\cos x}{5}\right) \text{\,, \  find \ \  } \frac{dy}{dx}
+\text{If \ } y =  \cot^{-1}\left(\frac{3 + 4\tan x}{4 - 3\tan x}\right) \text{\,, \  find \ \  } \frac{dy}{dx}
 \end{aligned}$
 
 %----------------------------------------
 \subsection*{Answer}
 \begin{equation} \nonumber
 \begin{alignedat}{4}
-y &=  \sin^{-1}\left(\frac{4\sin x + 3\cos x}{5}\right)\\
-  &=  \sin^{-1}\left(\frac{4}{5}\sin x + \frac{3}{5}\cos x\right)\\
- &=  \sin^{-1}\left(\cos A\sin x + \sin A\cos x\right)\\
+y &=  \cot^{-1}\left(\frac{3 + 4\tan x}{4 - 3\tan x}\right)\\
+  &=  \tan^{-1}\left(\frac{4 - 3\tan x}{3 + 4\tan x}\right)\\
+  &=  \tan^{-1}\left(\frac{\frac{4}{3} - \tan x}{1 + \frac{4}{3}\tan x}\right)\\
 \end{alignedat}
 \quad
 \vrule
 \quad 
 \begin{alignedat}{4}
-&=  \sin^{-1}\left[\sin (x + A)\right] \\
-&=  x + A \\
+&=  \tan^{-1} \tfrac{4}{3} + \tan^{-1}(\tan x)  \\
+&=  \frac{4}{3} + x \\
 \therefore \  \frac{dy}{dx} &= 1
 & \\
 & \\
@@ -47,25 +47,24 @@ y &=  \sin^{-1}\left(\frac{4\sin x + 3\cos x}{5}\right)\\
 \section{Question} 
 
 $\begin{aligned}[t] 
-\text{If \ } y =  \sin^{-1}\left(\frac{4\cos x + 3\sin x}{5}\right) \text{\,, \  find \ \  } \frac{dy}{dx}
+\text{If \ } y =  \tan^{-1}\left(\frac{1 + x \sin x}{x - \sin x}\right) \text{\,, \  find \ \  } \frac{dy}{dx}
 \end{aligned}$
 
 %----------------------------------------
 \subsection*{Answer}
 \begin{equation} \nonumber
 \begin{alignedat}{4}
-y &=  \sin^{-1}\left(\frac{4\cos x + 3\sin x}{5}\right)\\
-  &=  \sin^{-1}\left(\frac{4}{5}\cos x + \frac{3}{5}\sin x\right)\\
- &=  \sin^{-1}\left(\sin A\cos x + \cos A\sin x\right)\\
+y &=  \tan^{-1}\left(\frac{1 + x \sin x}{x - \sin x}\right)\\
+  &=  \tan^{-1}\left(\frac{\frac{1}{x} + \sin x}{1 - \frac{1}{x}\sin x}\right)\\
+  &=  \tan^{-1} \tfrac{1}{x} + \tan^{-1}(\sin x)  \\
 \end{alignedat}
 \quad
 \vrule
 \quad 
 \begin{alignedat}{4}
-&=  \sin^{-1}\left[\sin (A + x)\right] \\
-&=  A + x \\
-\therefore \  \frac{dy}{dx} &= 1
-& \\
+&=  \cot^{-1}x + \tan^{-1}(\sin x)  \\
+\therefore \  \frac{dy}{dx} &= \frac{-1}{1+x^2} + \frac{1}{1+\sin^2x}\ \frac{d}{dx}(\sin x)\\
+&= \frac{-1}{1+x^2} + \frac{\cos x}{1+\sin^2x} \\
 & \\
 \end{alignedat}
 \end{equation}
