@@ -1,0 +1,76 @@
+\documentclass[17pt]{extarticle}
+\usepackage{amsmath, amssymb}
+\usepackage{nccmath}
+\usepackage{cancel}
+\usepackage[a4paper, total={8in, 11.38in},top=2mm,left=27mm,bottom=2mm,right=5mm]{geometry}
+\usepackage{tikz}
+\usepackage{titlesec}
+
+\titleformat{\section}
+{\normalfont\normalsize\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}
+{\normalfont\normalsize\bfseries}{\thesection}{1em}{}
+
+\begin{document}
+
+\noindent
+\begin{fleqn} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Question} 
+
+$\begin{aligned}[t] 
+\text{If \ } y =  \sin^{-1}\left(\frac{4\sin x + 3\cos x}{5}\right) \text{\,, \  find \ \  } \frac{dy}{dx}
+\end{aligned}$
+
+%----------------------------------------
+\subsection*{Answer}
+\begin{equation} \nonumber
+\begin{alignedat}{4}
+y &=  \sin^{-1}\left(\frac{4\sin x + 3\cos x}{5}\right)\\
+  &=  \sin^{-1}\left(\frac{4}{5}\sin x + \frac{3}{5}\cos x\right)\\
+ &=  \sin^{-1}\left(\cos A\sin x + \sin A\cos x\right)\\
+\end{alignedat}
+\quad
+\vrule
+\quad 
+\begin{alignedat}{4}
+&=  \sin^{-1}\left[\sin (x + A)\right] \\
+&=  x + A \\
+\therefore \  \frac{dy}{dx} &= 1
+& \\
+& \\
+\end{alignedat}
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Question} 
+
+$\begin{aligned}[t] 
+\text{If \ } y =  \sin^{-1}\left(\frac{4\cos x + 3\sin x}{5}\right) \text{\,, \  find \ \  } \frac{dy}{dx}
+\end{aligned}$
+
+%----------------------------------------
+\subsection*{Answer}
+\begin{equation} \nonumber
+\begin{alignedat}{4}
+y &=  \sin^{-1}\left(\frac{4\cos x + 3\sin x}{5}\right)\\
+  &=  \sin^{-1}\left(\frac{4}{5}\cos x + \frac{3}{5}\sin x\right)\\
+ &=  \sin^{-1}\left(\sin A\cos x + \cos A\sin x\right)\\
+\end{alignedat}
+\quad
+\vrule
+\quad 
+\begin{alignedat}{4}
+&=  \sin^{-1}\left[\sin (A + x)\right] \\
+&=  A + x \\
+\therefore \  \frac{dy}{dx} &= 1
+& \\
+& \\
+\end{alignedat}
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{fleqn}
+\end{document} 
