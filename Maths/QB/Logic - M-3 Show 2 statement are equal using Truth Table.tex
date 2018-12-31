@@ -1,0 +1,85 @@
+\documentclass[17pt]{extarticle}
+\usepackage{amsmath, amssymb}
+\usepackage{nccmath}
+\usepackage[a4paper, total={6.5in, 10.5in},top=5mm,left=27mm]{geometry}
+\usepackage{titlesec}
+\usepackage{tikz}
+\usepackage{gensymb}
+\usetikzlibrary{arrows.meta}
+
+\titleformat{\section}
+{\normalfont\normalsize\bfseries}{\thesection}{1em}{}
+\setcounter{secnumdepth}{0} %% no numbering for sections
+
+\newcommand{\lto}{\mathbin{\to}}
+
+\begin{document}
+\begin{fleqn}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Question}
+Show that 
+$(p \wedge q)\to p$ $ \text{and} \ $p$ \to(p \vee q)$  \text{are equal} \\
+
+%----------------------------------------------------------------------
+\section{Solution} 
+The truth table for the given statement pattern is as follows \\
+\begin{tabular}{|c*{5}{c|}}
+\multicolumn{3}{c}{}&
+\multicolumn{1}{c}{%
+  $\overbrace{\hphantom{(p\land q)\lto p}}^{\textbf{(A)}}$%
+}
+&\multicolumn{1}{c}{}&
+\multicolumn{1}{c}{%
+  $\overbrace{\hphantom{p\lto (p\lor q)}}^{\textbf{(B)}}$%
+}\\
+\hline
+$p$ & $q$ & $p\land q$ & $(p\land q)\lto p$ & $p\lor q$ & $p\to (p\lor q)$\\
+\hline
+ T & T & T & T & T & T\\
+ T & F & F & T & T & T\\
+ F & T & F & T & T & T\\
+ F & F & F & T & F & T \\
+ \hline
+\end{tabular} \\ \\
+All the entries ofcolumn(A) and column(B) are identical \\
+$\therefore$ \ $(p \wedge q)\to p$ $ \equiv \ $p$ \to(p \vee q)$ 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Question}
+Using truth table show that $(p \wedge q)$ $ \equiv \ \sim(p \to \sim q)$ 
+
+%----------------------------------------
+
+\section{Solution}
+The truth table for the given statement pattern is as follows \\
+\begin{tabular}{|c*{5}{c|}}
+\multicolumn{2}{c}{}&
+\multicolumn{1}{c}{%
+  $\overbrace{\hphantom{(p\land q)\lto p}}^{\textbf{(A)}}$ %
+}
+&\multicolumn{2}{c}{}&
+\multicolumn{1}{c}{%
+  $\overbrace{\hphantom{p\lto (p\lor q)}}^{\textbf{(B)}}$%
+}\\
+\hline
+$p$ & $q$ & $p\land q$ & $ \sim q$ & $p\to \sim q$ & $\sim(p \to \sim q)$\\
+\hline
+ T & T & T & F & F & T\\
+ T & F & F & T & T & F\\
+ F & T & F & F & T & F\\
+ F & F & F & T & T & F \\
+ \hline
+\end{tabular} \\ \\
+All the entries ofcolumn(A) and column(B) are identical \\
+$\therefore$ \ $(p \wedge q) $ $ \equiv \ \sim(p \to \sim q)$ 
+\begin{equation} \nonumber
+\end{equation}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{fleqn}
+\end{document} 
