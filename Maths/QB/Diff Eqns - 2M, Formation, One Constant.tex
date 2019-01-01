@@ -1,0 +1,89 @@
+\documentclass[17pt]{extarticle}
+\usepackage{amsmath, amssymb}
+\usepackage{nccmath}
+\usepackage{cancel}
+\usepackage[a4paper, total={8in, 11.38in},top=2mm,left=27mm,bottom=2mm,right=5mm]{geometry}
+\usepackage{tikz}
+\usepackage{titlesec}
+
+\titleformat{\section}
+{\normalfont\normalsize\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}
+{\normalfont\normalsize\bfseries}{\thesection}{1em}{}
+
+\begin{document}
+
+\noindent
+\begin{fleqn} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Question} 
+Form the differential equation by eliminating the arbitrary constant from the relation $ x^3 + y^3 = 4ax$
+
+%----------------------------------------
+\subsection*{Answer}
+\begin{equation} \nonumber
+\begin{alignedat}{4}
+&  x^3 + y^3 = 4ax  \quad\quad\quad \cdots (1)  \\
+& \text{Differentiating w.r.t. x \ }\\
+& 3x^2 + 3y^2 \frac{dy}{dx}= 4a \\
+& 3x^2 + 3y^2\frac{dy}{dx}= \frac{x^3+y^3}{x} \quad \cdots by \ (1) \quad \\
+\end{alignedat}
+\,
+\vrule
+\quad
+\, 
+\begin{alignedat}{4}
+& 3x^3 + 3xy^2\frac{dy}{dx}=  x^2+y^3\\
+& 3xy^2\frac{dy}{dx}=  y^3-2x^2\\& \\
+& \\
+& \\
+\end{alignedat}
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Question} 
+
+$\begin{aligned}[t] 
+\text{If \ } x^p y^q = (x+y)^{p+q} \text{\ , \ the show that \ \  } \frac{dy}{dx}=\frac{y}{x}
+\end{aligned}$
+
+%----------------------------------------
+\subsection*{Answer}
+\begin{equation} \nonumber
+\begin{alignedat}{4}
+& \text{Given \ } x^py^q = (x+y)^{p+q} \\
+& \therefore \log (x^py^q) = \log (x+y)^{p+q} \\
+& \therefore p\log x + q\log y) = (p+q)\log (x+y) \\
+& \text{Differentiating w.r.t. x \ }\\
+& \therefore \frac{p}{x}+\frac{q}{y}\frac{dy}{dx} = \frac{p+q}{x+y}\left( 1+\frac{dy}{dx}\right)\\
+& \therefore \frac{p}{x}+\frac{q}{y}\frac{dy}{dx} = \frac{p+q}{x+y} + \frac{p+q}{x+y}\,\frac{dy}{dx}\\
+& \therefore \left( \frac{q}{y}-\frac{p+q}{x+y} \right)  \frac{dy}{dx} = \frac{p+q}{x+y} - \frac{p}{x}\\
+\end{alignedat}
+\,
+\vrule
+\, 
+\begin{alignedat}{4}
+& \therefore \frac{\cancel{qx - py}}{y} \,  \frac{dy}{dx} =  \frac{\cancel{qx - py}}{x}\\
+& \therefore \frac{dy}{dx}=\frac{y}{x}\\
+& \\
+& \\
+& \\
+& \\
+& \\
+& \\
+\end{alignedat}
+\end{equation}
+
+\begin{equation} \nonumber
+\begin{alignedat}{4}
+& \therefore \frac{q(x+y) - (p+q)y}{y(x+y)} \,  \frac{dy}{dx} = \frac{(p+q)x - p(x+y)}{(x+y)x}\\
+& \therefore \frac{qx + qy - py - qy}{y} \,  \frac{dy}{dx} = \frac{px + qx - px - py}{x}\\
+\end{alignedat}
+\end{equation}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{fleqn}
+\end{document} 
