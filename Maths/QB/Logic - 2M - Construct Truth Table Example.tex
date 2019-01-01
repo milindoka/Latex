@@ -1,0 +1,105 @@
+\documentclass[17pt]{extarticle}
+\usepackage{amsmath, amssymb}
+\usepackage{nccmath}
+\usepackage[a4paper, total={6.5in, 10.5in},top=5mm,left=27mm]{geometry}
+\usepackage{titlesec}
+\usepackage{tikz}
+\usepackage{gensymb}
+\usetikzlibrary{arrows.meta}
+
+\titleformat{\section}
+{\normalfont\normalsize\bfseries}{\thesection}{1em}{}
+\setcounter{secnumdepth}{0} %% no numbering for sections
+
+\newcommand{\lto}{\mathbin{\to}}
+
+\begin{document}
+\begin{fleqn}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Question}
+Construct the truth table of 
+$(\sim p\ \vee \sim q) \leftrightarrow [\sim(p \wedge q)]$\\ \\
+
+%----------------------------------------------------------------------
+\section{Solution} 
+The truth table for the given statement pattern is as follows \\
+\begin{tabular}{|c|*{7}{c|}}
+\multicolumn{4}{c}{}&
+\multicolumn{1}{c}{\text{A}}
+&\multicolumn{1}{c}{}
+&\multicolumn{1}{c}{\text{B}}\\
+\hline
+$p$ & $q$ & $\sim p$ & $\sim q$ & $\sim p$ $\vee$ $\sim q$ & $p$ $\wedge$ $q$ & $\sim$($p$ $\wedge$ $q$) & $A$ $\leftrightarrow $ $B$ \\
+\hline
+ T & T & F & F & F & T & F & T \\ \hline
+ T & F & F & T & T & F & T & T \\ \hline
+ F & T & T & F & T & F & T & T \\ \hline
+ F & F & T & T & T & F & T & T \\ \hline
+\end{tabular} \\ \\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Questions}
+Prepare the truth table of $(\sim p \to \sim q)$ $ \wedge (\sim p \to \sim p)$ 
+
+%----------------------------------------
+
+\section{Solution} 
+The truth table for the given statement pattern is as follows \\
+\begin{tabular}{|c|*{6}{c|}}
+\multicolumn{3}{c}{}&
+\multicolumn{1}{c}{}
+& \multicolumn{1}{c}{\text{A}}
+& \multicolumn{1}{c}{\text{B}}
+& \multicolumn{1}{c}{} \\
+\hline
+$p$ & $q$ & $\sim p$ & $\sim q$ & $\sim p$ $\to $ $\sim p$ & $\sim q$ $\to $ $\sim p$ & $A$ $\wedge$ $B$ \\
+\hline
+ T & T & F & F & T & T & T \\ \hline
+ T & F & F & T & T & F & F \\ \hline
+ F & T & T & F & F & T & F \\ \hline
+ F & F & T & T & T & T & T \\ \hline
+\end{tabular} \\ \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Question3}
+Using truth table show that $(\sim p \ \wedge \sim q) \to ()$  
+
+%----------------------------------------
+
+\section{Solution3}
+The truth table for the given statement pattern is as follows \\
+\begin{tabular}{|c|*{8}{c|}}
+\multicolumn{4}{c}{}
+& \multicolumn{1}{c}{}
+& \multicolumn{1}{c}{\text{A}}
+& \multicolumn{1}{c}{\text{B}} 
+& \multicolumn{1}{c}{}\\
+\hline
+$p$ & $q$ & $r$ & $\sim p$ & $\sim q$ & $\sim p\ \wedge \sim q $ & $p \leftrightarrow r$ & $A \to B $\\
+\hline
+ T & T & T & F & F & F & T & T \\ \hline
+ T & T & F & F & F & F & F & T \\ \hline
+ T & F & T & F & T & F & T & T \\ \hline
+ T & F & F & F & T & F & F & T \\ \hline
+ F & T & T & T & F & F & F & T \\ \hline
+ F & T & F & T & F & F & T & T \\ \hline
+ F & F & T & T & T & T & F & F \\ \hline
+ F & F & F & T & T & T & T & T \\ \hline
+
+\end{tabular} \\ \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{equation} \nonumber
+\end{equation}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{fleqn}
+\end{document} 
