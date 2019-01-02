@@ -1,0 +1,73 @@
+\documentclass[17pt]{extarticle}
+
+\usepackage{amsmath, amssymb}
+\usepackage{nccmath}
+\usepackage{cancel}
+\usepackage[a4paper, total={8in, 11.38in},top=2mm,left=27mm,bottom=2mm,right=5mm]{geometry}
+\usepackage{tikz}
+\usepackage{titlesec}
+\newcommand{\cosec}{\operatorname{cosec}}
+
+
+\titleformat{\section}
+{\normalfont\normalsize\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}
+{\normalfont\normalsize\bfseries}{\thesection}{1em}{}
+
+\begin{document}
+
+\noindent
+\begin{fleqn} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Question} 
+Solve the Differential Equation : \quad $ \sec x\;dy + \cosec y\;dx = 0$
+
+%----------------------------------------
+\subsection*{Answer}
+\begin{equation} \nonumber
+\begin{alignedat}{4}
+&  \sec x\;dy + \cosec y\;dx = 0 \quad \\[8pt]
+& \therefore \frac{dy}{\cosec y}+ \frac{dx}{\sec x}=0 \\[8pt]
+& \therefore \sin y \;dy + \cos x\; dx=0\\
+\end{alignedat}
+\,
+\vrule
+\quad
+\, 
+\begin{alignedat}{4}
+& \text{Integrating }\\
+& \int \sin y\;dy + \int \cos x\;dx= c \\
+& \therefore-\cos y + \sin x = c\\
+& \therefore\sin x - \cos y = c\\
+\end{alignedat}
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+\section{Question} 
+Solve the Differential Equation : \quad $ \sec x\;dy + \cosec y\;dx = 0$
+
+%----------------------------------------
+\subsection*{Answer}
+\begin{equation} \nonumber
+\begin{alignedat}{4}
+&  \sqrt{1 -y^2}\;dx - \sqrt{1-x^2}\; dy = 0 \quad \\[8pt]
+& \therefore \frac{dx}{\sqrt{1 - x^2}}+ \frac{dy}{\sqrt{1 - y^2}}=0 \\[8pt]
+\end{alignedat}
+\,
+\vrule
+\quad
+\, 
+\begin{alignedat}{4}
+& \text{Integrating }\\
+& \int \frac{dx}{\sqrt{1 - x^2}}+ \int \frac{dy}{\sqrt{1 - y^2}}=c \\
+& \therefore \sin^{-1} x - \sin^{-1} y = c\\
+\end{alignedat}
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{fleqn}
+\end{document} 
