@@ -3,6 +3,12 @@
 \usepackage{tikz}
 \usepackage[top=0.2in,left=0.9in]{geometry} %This geometry is page layout
 
+%%%%% for mid arrows
+\usetikzlibrary{arrows}
+\newcommand{\midarrow}{\tikz \draw[-triangle 90] (0,0) -- +(.1,0);}
+
+\usetikzlibrary{decorations.markings}
+
 
 \begin{document}
 \begin{flushleft}
@@ -65,7 +71,31 @@ $y=5 - 4x -x^2 $
       \draw[->] (-3,0) -- (4.2,0) node[right] {$x$};
       \draw[->] (0,-3) -- (0,4.2) node[above] {$y$};
       \draw[scale=0.5,domain=-5:2,smooth,variable=\x,blue] plot (\x,{5 - 4*\x - \x*\x});
-    \end{tikzpicture}
+ \end{tikzpicture}
+    \\\\
+\begin{tikzpicture}
+\begin{scope}[very thick, every node/.style={sloped,allow upside down}]
+  \draw (-4,0)-- node {\midarrow} (4,0);
+  \draw (4,0)-- node {\midarrow} (4,2);
+  \draw (4,2)-- node {\midarrow} (-4,2);
+  \draw (-4,2)-- node {\midarrow} (-4,0);
+\end{scope}
+\end{tikzpicture}
+\\
+\\
+\begin{tikzpicture}
+\begin{scope}[very thick,decoration={
+    markings,
+    mark=at position 0.8 with {\arrow{>}}}
+    ] 
+    \draw[postaction={decorate}] (-4,0)--(4,0);
+    \draw[postaction={decorate}] (4,0)--(4,2);
+    \draw[postaction={decorate}] (4,2)--(-4,2);
+    \draw[postaction={decorate}] (-4,2)--(-4,0);
+\end{scope}
+\end{tikzpicture}
+
+
 
 
 \end{document}
