@@ -1,0 +1,32 @@
+\documentclass[a4paper,12pt]{article}
+\pagestyle{empty}
+\usepackage{circuitikz}
+\ctikzset{v/.append style={/tikz/american voltages}}
+
+\begin{document}
+
+\begin{circuitikz}[american voltages]
+  \draw
+  (0,0) to[sV]
+  (0,2) to[R, v^>=$v_1$]
+  (3,2) to[C]
+  (3,0) -- (0,0);
+\end{circuitikz}
+\\
+\\
+\begin{circuitikz}[scale=1.5]
+
+\draw (0,0) to [V=E] (0,2)
+to[short,-o](0.75,2);
+\draw[ very thick](0.78,2)-- +(30:0.46);
+\draw (1.25,2)to[short,o-](2,2)
+to [C=$C$](2,0)
+to [short,-o](1.25,0);
+\draw [very thick] (1.22,0)--(0.77,0);
+\draw (0.75,0)to [short,o-](0,0);
+
+\end{circuitikz}
+
+\end{document}
+
+\end{document}
