@@ -26,46 +26,36 @@ Show by vector method that the sum of the squares of the diagonals of a parallel
 $\text{Let ABCD be a parallelogram with }$ \\
 $\overline{AB} = \overline{DC} = \overline{a} \text{\;\;\;and}$\\
 $\overline{BC} = \overline{AD} = \overline{b}$\\
-%\vspace{-1.45cm}
+\vspace{-0.8cm}
 \begin{equation} \nonumber
 \begin{alignedat}{4}
-\text{LHS } &= AC^2+BD^2 \\
+&\text{LHS } \\&= AC^2+BD^2 \\
 &= |\overline{AC}|^2 + |\overline{BD}|^2\\
 &= |\overline{AB}+\overline{BC}|^2 + |\overline{BC}+\overline{CD}|^2\\
 &= |\overline{a}+\overline{b}|^2 + |\overline{a}-\overline{b}|^2\\
-&= \\
-&= \\
+&= (\overline{a}+\overline{b})\cdot (\overline{a}+\overline{b})+(\overline{a}-\overline{b})\cdot(\overline{a}-\overline{b})\\
+&= |\overline{a}|^2 + 2\overline{a} \cdot \overline{b}+|\overline{b}|^2 +|\overline{a}|^2 - 2\overline{a} \cdot \overline{b}+|\overline{b}|^2  \\
 \end{alignedat}
 %\vrule
 %\vspace{1cm}
-\quad\quad\quad
 \begin{alignedat}{4}
 \begin{tikzpicture}
-\draw (0,0) -- (0,2) -- (2,2) -- (2,4) -- (4,4) -- (4,2) -- (6,2) -- (6,0) -- (4,0) -- (4,-2) -- (2,-2) -- (2,0) -- (0,0) ; 
-\filldraw[fill=gray!20] (2,0) rectangle (4,2);
+\draw (0,0) -- (1,4) -- (6,4) -- (5,0) -- (0,0); 
 \end{tikzpicture}
+\\\\\\ \    % Only space charachter after several newlines to raise the figure
 \end{alignedat}
 \end{equation}
-\quad
-\vspace*{-5mm}
-
+\vspace{-0.6cm}
 \begin{equation} \nonumber
 \begin{alignedat}{4}
-& \frac{dV}{dx}=\frac{1}{4}(300x - x^2) \\
-& But\  \frac{dV}{dx}= 0 \text{ for max}\\
-& \therefore \frac{1}{4}(300x - x^2)=0\\
-& \therefore x = \pm 10\\
-& \therefore x = 10 \ \ (+ve)
+&= |\overline{a}|^2 + |\overline{b}|^2 +|\overline{a}|^2 +|\overline{b}|^2  \\
+&= |\overline{AB}|^2 + |\overline{BC}|^2 +|\overline{CD}|^2 +|\overline{DA}|^2  \\
 \end{alignedat}
 \quad
 \vrule
 \quad
 \begin{alignedat}{4}
-&= \left(\frac{d^2V}{dx^2}\right)_{x=10}=\left(\frac{-3x}{2}\right)_{x=10} = -15<0\\
-& \therefore \text{ V is max at x = 10 by 2nd derivative test}\\
-& \therefore Height\  h=But\  \frac{300 - (10)^2}{4(10)}= 5\ cm\\
-& \therefore Required\  dim = 5 \times  5 \times 10 \\
-& Consequently \ Volume\ V = 500 \ cm^3 \\
+&= \overline{AB}^2 + \overline{BC}^2 +\overline{CD}^2 +\overline{DA}^2 \\ &= \text{RHS}
 \end{alignedat}
 \end{equation}
 
