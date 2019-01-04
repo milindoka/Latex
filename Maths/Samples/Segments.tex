@@ -1,0 +1,14 @@
+\documentclass[17pt]{extarticle}
+\usepackage{tikz}
+
+
+\begin{document}
+\begin{tikzpicture}[dot/.style={circle,inner sep=1.4pt,fill,label={#1},name=#1}]
+
+\node [dot=A] at (0,0) {};
+\node [dot=B] at (3,1) {};
+\node [dot=P] at (1.9,-1.6) {};
+
+\draw (A) -- (B);
+\end{tikzpicture}
+\end{document}
