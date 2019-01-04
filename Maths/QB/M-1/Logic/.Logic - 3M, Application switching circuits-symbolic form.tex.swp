@@ -106,8 +106,8 @@ $p \wedge (q \vee r) = l$. We can write $p \wedge (q \vee r)$ Since this is equi
 
 
 
-\draw (0,0) to [battery1](0,2);
-\draw (0,2) -- (3,3);
+\draw (0,0) to [battery1] (0,2);
+\draw (
 \draw (0.5,2)--(0.5,2.5) to [short,-o]node[below]{\quad \ \ S$_1$} (1,2.5) ;
 \draw (1,2.5)-- +(30:0.49);
 \draw (1.5,2.5)to[short,o-](2,2.5);

@@ -81,7 +81,7 @@
 \pagebreak
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section {Cartesian Coordinate System.}
+\section {Cartesian Coordinate System - Mid Origin}
 
 \begin{LTXexample}[pos=b,preset=\centering,width=1\linewidth]
   \begin{tikzpicture}
@@ -91,6 +91,24 @@
        \draw[xshift=\x cm, thick] (0pt,-1pt)--(0pt,1pt) node[below] {$\x$};
       \draw [thick] [->] (0,-4)--(0,4) node[above, left] {$y$};
      \foreach \y in {-3,...,3}
+       \draw[yshift=\y cm, thick] (-1pt,0pt)--(1pt,0pt) node[left] {$\y$};
+   
+  \end{tikzpicture}
+\end{LTXexample}
+
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section {Cartesian Coordinate System - Bot Left Origin}
+
+\begin{LTXexample}[pos=b,preset=\centering,width=1\linewidth]
+  \begin{tikzpicture}
+    \draw[very thin, gray!30, step=1 cm](0,0) grid (8,8);
+    \draw [thick] [->] (0,0)--(8,0) node[right, below] {$x$};
+     \foreach \x in {0,...,8}
+       \draw[xshift=\x cm, thick] (0pt,-1pt)--(0pt,1pt) node[below] {$\x$};
+      \draw [thick] [->] (0,0)--(0,8) node[above, left] {$y$};
+     \foreach \y in {0,...,8}
        \draw[yshift=\y cm, thick] (-1pt,0pt)--(1pt,0pt) node[left] {$\y$};
    
   \end{tikzpicture}
@@ -158,7 +176,7 @@ Requires :
 \end{LTXexample}
 \pagebreak
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section {Cartesian Coordinate System.}
+\section {Cartesian Coordinate System - 1}
 
 \begin{LTXexample}[pos=b,preset=\centering,width=1\linewidth]
   \begin{tikzpicture}
