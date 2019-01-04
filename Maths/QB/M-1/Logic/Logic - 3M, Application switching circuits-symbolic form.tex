@@ -38,19 +38,33 @@ $\therefore$ Total surface area = $x^2+4h = 300\,cm^2$
 \quad\quad\quad
 \begin{alignedat}{4}
 \begin{circuitikz}[scale=1.5]
-\draw (0,0) to [battery1] (0,2)
-to[short,-o](0.75,2);
-\draw (0.75,2)-- +(30:0.46);
+\draw (0,0) to [battery1] (0,2) to[short,-o]node[below]{\quad \ \ S$_1$}(0.75,2);
+\draw (0.75,2)-- +(30:0.49);
+\draw (1.25,2)to[short,o-](2,2);
+
+
 \draw (2,2) -- (2,2.5);
-\draw (2,2.5) to[short,-o](3,2.5);
-\draw (3.50,2.5)to[short,o-](4,2.5);
-\draw (4,2.5) -- (4,2);
-\draw (4,1.7) circle(3mm);
-\draw (4,1.7) node{L};
+\draw (2,2) -- (2,1.5);
+
+\draw (2,1.5) to[short,-o] node[below]{\quad \ \ S$_2$}(3,1.5);
+\draw (3,1.5)-- +(30:0.49);
+\draw (3.5,1.5)to[short,o-] (4.5,1.5);
+
+\draw (2,2.5) to[short,-o]node[below]{\quad \ \ S$_3$}(3,2.5);
+\draw (3,2.5)-- +(30:0.49);
+\draw (3.50,2.5)to[short,o-](4.5,2.5);
+
+\draw (4.5,2)--(5,2);
+\draw (5,2)--(5,1.3);
+
+\draw (4.5,2.5) -- (4.5,1.5);
+\draw (5,1) circle(3mm);
+\draw (5,1) node{L};
 
 
-\draw [very thick] (1.22,0)--(0.77,0);
-\draw (0.75,0)to [short,o-](0,0);
+\draw (0,0)--(5,0);
+\draw (5,0)--(5,0.7);
+
 \end{circuitikz}
 \end{alignedat}
 \end{equation}
