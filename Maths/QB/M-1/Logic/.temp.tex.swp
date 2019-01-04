@@ -1,9 +1,9 @@
 \documentclass[17pt]{extarticle}
 \usepackage{amsmath, amssymb}
 \usepackage{nccmath}
-\usepackage[a4paper, total={8in, 11.38in},top=2mm,left=27mm,bottom=2mm,right=2mm]{geometry}
+\usepackage[a4paper, total={8in,11.38in},top=2mm,left=27mm,bottom=2mm,right=2mm]{geometry}
 
-\usepackage{tikz}
+%\usepackage{tikz}
 \usepackage{circuitikz}
 \ctikzset{v/.append style={/tikz/american voltages}}
 
@@ -59,7 +59,6 @@
 \draw (4.5,2.5) -- (4.5,1.5);
 \draw (5,1) circle(3mm);
 \draw (5,1) node{L};
-
 
 \draw (0,0)--(5,0);
 \draw (5,0)--(5,0.7);
@@ -145,7 +144,6 @@ $p \wedge (q \vee r) = l$. We can write $p \wedge (q \vee r)$ Since this is equi
 
 \subsection*{Answer}
 $p \wedge (q \vee r) = l$. We can write $p \wedge (q \vee r)$ Since this is equilvalent to $l$ (the lamp is on), the current is flowing in the circuit. The circuit represents $p \wedge (q \vee r)$
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
