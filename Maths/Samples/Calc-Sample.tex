@@ -1,0 +1,16 @@
+\documentclass{article}
+
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+\begin{document}
+
+\begin{tikzpicture}
+    \draw (0,0) arc(0:90:{sqrt(15)}); %now ok
+    \draw (0,0) arc(0:{asin(1)}:5); %ok
+    \draw (0,0) -- ($ (4,0) + sqrt(7)*(0,1) $);  %ok
+    \draw (0,0) -- ($ (4,{sqrt(7)}) $);  %now ok
+    
+\end{tikzpicture}
+
+\end{document}

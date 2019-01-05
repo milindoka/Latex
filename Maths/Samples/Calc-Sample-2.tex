@@ -1,0 +1,27 @@
+\documentclass{article}
+
+\usepackage{tikz}
+\usetikzlibrary{calc}
+%\newcommand{\dt}[1]{\draw (#1) circle(0.08);}
+%For example,  \dt {0,0}
+
+\newcommand{\pt}[1]{\draw (#1) circle(0.08);}
+\newcommand{\dt}[2]{\draw (#1/2 + #2/2) circle(0.08);\draw (#1)--(#2);  }
+%For example,  \dt {0,0}
+
+
+%For example,  \dt {0,0}
+
+
+\begin{document}
+
+\begin{tikzpicture}
+    \draw (0,0) arc(0:90:{sqrt(15)}); 
+    \draw (0,0) arc(0:{asin(1)}:5); 
+    \draw (0,0) -- ($ (4,0) + sqrt(7)*(0,1) $);  
+    \draw (0,0) -- ($ (4,{sqrt(7)}) $);
+    \draw (0,0) -- ($ ({2*4},{sqrt(7)}) $) -- ($ (4,{sqrt(7)}) $);  
+    \dt {0,0}{5,5};
+\end{tikzpicture}
+
+\end{document}
