@@ -92,7 +92,7 @@ $p \wedge (q \vee r) = l$. We can write $p \wedge (q \vee r)$ Since this is equi
 \quad\quad\quad
 \begin{alignedat}{4}
 \begin{tikzpicture}[dot/.style={circle,inner sep=1.4pt,fill}]
-\draw[very thin, gray!50, step=1 cm](0,0) grid (8,5);
+%\draw[very thin, gray!50, step=1 cm](0,0) grid (8,5);
 
 % ------
 \draw (0,3) -- (1,3) -- (1,4) --(2,4);
