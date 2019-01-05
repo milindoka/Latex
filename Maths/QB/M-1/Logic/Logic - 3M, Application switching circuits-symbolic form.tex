@@ -91,20 +91,22 @@ $p \wedge (q \vee r) = l$. We can write $p \wedge (q \vee r)$ Since this is equi
 %\vspace{1cm}
 \quad\quad\quad
 \begin{alignedat}{4}
-\begin{tikzpicture}[dot/.style={circle,inner sep=1.4pt,fill}]
-\draw[very thin, gray!50, step=1 cm](0,0) grid (8,5);
+\begin{tikzpicture}[dot/.style={circle,inner sep=1.4pt,draw}]
+%\draw[very thin, gray!50, step=1 cm](0,0) grid (8,5);
 
 % ------
-\draw (0,3) -- (1,3) -- (1,4) --(2,4);
-
+\draw (0,3) -- (1,3) -- (1,4) -- (2,4);
 \node [dot] at (2,4) {};
 \node [dot] at (2.5,4) {};
 \draw (2,4) -- +(35:0.60);
+\node at ( 2.3,4)[below]{S$_1$};
+
 
 \draw (2.5,4)--(3.5,4) -- (3.5,2)--(2.5,2);
 \node [dot] at (2.5,2) {};
 \node [dot] at (2,2) {};
 \draw (2,2) -- +(35:0.60);
+\node at ( 2.3,2)[below]{S$_2$};
 
 \draw (2,2) -- (1,2) -- (1,3);
 %----
@@ -114,11 +116,13 @@ $p \wedge (q \vee r) = l$. We can write $p \wedge (q \vee r)$ Since this is equi
 \node [dot] at (5.5,4) {};
 \draw (5.5,4) -- +(35:0.60);
 \node [dot] at (6,4) {};
+\node at (5.8,4)[below]{S$_3$};
 
 \draw (6,4)--(7,4) -- (7,2)--(6,2);
 \node [dot] at (6,2) {};
 \node [dot] at (5.5,2) {};
 \draw (5.5,2) -- +(35:0.60);
+\node at ( 5.8,2)[below]{S$_4$};
 
 \draw (5.5,2) -- (4.5,2) -- (4.5,3);
 %----

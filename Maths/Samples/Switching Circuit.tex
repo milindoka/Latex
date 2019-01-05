@@ -1,10 +1,11 @@
 \documentclass[17pt]{extarticle}
 \usepackage{tikz}
 
-%\newcommand [1] {\draw #1 circle(0.5)}
+%\newcommand{\dt}[1]{\draw (#1) circle(0.08);}
+%\dt {0,0}
 
 \begin{document}
-\begin{tikzpicture}[dot/.style={circle,inner sep=1.4pt,fill}]
+\begin{tikzpicture}[dot/.style={circle,inner sep=1.4pt,draw}]
 \draw[very thin, gray!50, step=1 cm](0,0) grid (8,5);
 
 % ------
