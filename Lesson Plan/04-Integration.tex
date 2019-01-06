@@ -1,6 +1,8 @@
 \documentclass[17pt]{extarticle}
 \usepackage[fleqn]{amsmath} %%%% [fleqn] - Left alignment
-%\usepackage{amssymb}
+\usepackage{amssymb}
+\usepackage{rotating}
+\usepackage{pifont}
 \usepackage[a4paper, total={8in, 11.38in},top=1cm,left=2cm ,bottom=1cm ,right=1cm]{geometry}
 
 
@@ -25,5 +27,11 @@
 & \text{Evaluate :}\quad \int\displaylimits_{-\frac{\pi}{3}}^{\frac{\pi}{3}} \frac{\sin^2x}{(1 -\cos x)^2}\;dx\\
 \end{align*}
 
+\raisebox{-0.5ex}[0pt][0.6\baselineskip]{\ding{36}}
+\dotfill 
+\raisebox {0.9ex}[0pt][0.6\baselineskip]{\begin{turn}{180} \ding{36}\end{turn}}
+
+
+\begin{turn}{-90}Test 90\end{turn}
 
 \end{document}
