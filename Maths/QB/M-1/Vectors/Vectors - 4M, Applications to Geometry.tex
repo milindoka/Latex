@@ -1,10 +1,28 @@
-\documentclass[14pt]{extarticle}
+\documentclass[17pt]{extarticle}
 \usepackage{amsmath, amssymb}
 \usepackage{nccmath}
+
 \usepackage[a4paper, total={8in, 11.38in},top=2mm,left=27mm,bottom=2mm,right=2mm]{geometry}
 \usepackage{tikz}
+\usetikzlibrary{calc}
 \usetikzlibrary{arrows.meta}
 \usepackage{titlesec}
+
+
+%% New Commands ----------------------------------
+\newcommand{\pt}[1]{\draw (#1) circle(0.08);} %draw point 
+%For example,  \pt {0,0}
+
+%Extend to draw dot at midpint of segment
+\newcommand{\dt}[2]{\draw ($(#1)!0.5!(#2)$) circle(0.08);\draw (#1)--(#2);}   %For example    \dt {0,0}{5,5};
+
+%Extend to draw arrow at midpoint by combining two lines
+\newcommand{\ma}[2]
+{ \draw [shorten >= -2.5mm][-{Stealth[length=5mm]}] (#1) -- ($(#1)!0.5!(#2)$);  
+ \draw ($(#1)!0.5!(#2)$)--(#2);  
+}
+%%%End of new commands-----------------------------
+
 \titleformat{\section}
 {\normalfont\normalsize\bfseries}{\thesection}{1em}{}
 
@@ -38,7 +56,7 @@ $\overline{BC} = \overline{AD} = \overline{b}$\\
 %\vrule
 %\vspace{1cm}
 \begin{alignedat}{4}
-\begin{tikzpicture}
+\begin{tikzpicture}[scale=0.9]
 \draw[-{Stealth[inset=0mm]},line width=0.4mm] (0,0) -- (1.2,1.8);
 \draw (1.2,1.8) -- (2,3); 
 \draw[-{Stealth[inset=0mm]},line width=0.4mm] (2,3) -- (4.5,3);
@@ -91,6 +109,7 @@ Prove using vector method that the angle subtended on a semi-circle is a right a
 %----------------------------------------
 
 \subsection*{Answer}
+
 \begin{equation} \nonumber
 \begin{alignedat}{4}
 \begin{minipage}{15em}
@@ -100,29 +119,53 @@ Prove using vector method that the angle subtended on a semi-circle is a right a
 %\vrule
 \quad\quad\quad
 \begin{alignedat}{4}
-\begin{tikzpicture}
-\draw[very thin, gray!40, step=1 cm](0,0) grid (8,5);\end{tikzpicture}\\\
+\begin{tikzpicture}[scale=0.9]
+%\draw[very thin, gray!40, step=1 cm](0,0) grid (8,5);
+\draw (0:8) arc (0:180:4);
+\pt {4,0};
+\ma {0,0}{4,0};
+\pt {2,{sqrt(12))}}; %% take a point on the circle say ( 2,sqrt(12) )
+                     %% calculated by calc packageS
+\ma {4,0}{2,{sqrt(12))}};
+\ma {8,0}{2,{sqrt(12))}};
+\ma {0,0}{2,{sqrt(12))}};
+\ma {4,0}{8,0};
+\node at (0,-0.5){A};
+\node at (4,-0.5){O};
+\node at (1.8,4){C};
+\node at (8,-0.5){B};
+
+\node at (2.5, -0.5){$\overline{a}$};
+\node at (6.5,-0.5){$\overline{b}$};
+\node at (4,1){$\overline{c}$};
+
+
+\end{tikzpicture}\\\
 \end{alignedat}
 \end{equation}
 \begin{equation} \nonumber
 \begin{alignedat}{4}
-& Now\ f'(x) = 0\ gives\\
-& \frac{\pi}{3}(9x - x^3)=0\\
-& \therefore \ 3x^2=9\\
-& \therefore x = \sqrt{10}
+\text{Then }\\
+ \overline{AC} \cdot \overline{BC} &= 
+             (\overline{c} - \overline{a}) \cdot  
+             (\overline{c} - \overline{b})\\
+&= (\overline{c} - \overline{a}) \cdot  
+             (\overline{c} + \overline{a}) 
+            \quad \boxed { \;-\overline{b}=\overline{a}\;}\\
+&= |\overline{c}|^2 - |\overline{a}|^2 \\
+&= r^2 - r^2 = 0 \\
 \end{alignedat}
 \quad
 \vrule
 \quad
 \begin{alignedat}{4}
-& Also\ \ f''(x) =-6x\\
-& \therefore\ \ f''(\sqrt{3})=-6\sqrt{3}<0\\
-& \therefore \ \ By\ second\ derivative\ test\\
-& Volume \ f\ is maximum\ at\ x=\sqrt{3}
+& \therefore \; \overline{AC} \perp \overline{BC}\\
+& \therefore \; \text{Seg AB} \perp \text{Seg BC}\\
+& \therefore \; \text{Angle in Semi-circle}\\
+& \therefore \; \text{is right angle.} 
 \end{alignedat}
 \end{equation}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 \end{fleqn}
 \end{document} 

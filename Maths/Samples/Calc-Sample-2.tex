@@ -8,24 +8,20 @@
 \usepackage{tikz}
 \usetikzlibrary{calc}
 \usetikzlibrary{arrows.meta}
-%\newcommand{\dt}[1]{\draw (#1) circle(0.08);}
-%For example,  \dt {0,0}
 
-\newcommand{\pt}[1]{\draw (#1) circle(0.08);} %draw dot at point
-%For example,  \dt {0,0}
+%% New Commands ----------------------------------
+\newcommand{\pt}[1]{\draw (#1) circle(0.08);} %draw point 
+%For example,  \pt {0,0}
 
 %Extend to draw dot at midpint of segment
-%For example    \dt {0,0}{5,5};
+\newcommand{\dt}[2]{\draw ($(#1)!0.5!(#2)$) circle(0.08);\draw (#1)--(#2);}   %For example    \dt {0,0}{5,5};
 
-
-\newcommand{\dt}[2]{\draw ($(#1)!0.5!(#2)$) circle(0.08);\draw (#1)--(#2);}
-
-%Draw arrow at midpoint by combining two lines
+%Extend to draw arrow at midpoint by combining two lines
 \newcommand{\ma}[2]
-{ \draw [shorten >= -2.5mm][-{Stealth[length=5mm]}] (#1) -- ($(#1)!0.5!     			(#2)$);  
-  \draw ($(#1)!0.5!(#2)$)--(#2);  
+{ \draw [shorten >= -2.5mm][-{Stealth[length=5mm]}] (#1) -- ($(#1)!0.5!(#2)$);  
+ \draw ($(#1)!0.5!(#2)$)--(#2);  
 }
-
+%%%End of new commands-----------------------------
 
 \begin{document}
 
