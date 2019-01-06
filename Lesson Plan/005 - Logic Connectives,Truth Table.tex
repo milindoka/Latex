@@ -1,0 +1,48 @@
+\documentclass[17pt]{article}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{amsmath, amssymb}
+\usepackage{nccmath}
+\usepackage[a4paper, total={8in, 11.38in},top=5mm,left=27mm,bottom=2mm,right=2mm]{geometry}
+
+
+\newcommand{\lto}{\mathbin{\to}}
+
+\begin{document}
+\section{Logical Connectives}
+Now something related to Logical connectives.
+
+$\sim p$, $p \vee q$, 
+$p \wedge q$, $p\to q$, 
+$p \leftrightarrow q$. \\
+Now let us combine the above operations the see the output !!! \\
+1. $p\vee \sim q$ \\
+2. $q \to ( r \to \sim q )$ \\
+3. $p \leftrightarrow ( q \wedge  \sim r) $ \\
+4. $(p \vee \sim q) \leftrightarrow [(p \wedge \sim q) \to (q \to \sim r)] $ \\
+5. $(p \vee \sim q) \equiv [(p \wedge \sim q) \to (q \to \sim r)] $
+
+
+\section{Question}
+Draw the switching circuit for the following statement pattern \\ and also construct switching table : \ \  
+$(p \wedge \sim q \wedge r ) \vee [ p \wedge ( \sim q \vee \sim r )] $
+
+
+
+\section{Truth Table}
+\begin{tabular}{|c*{5}{c|}}
+\multicolumn{3}{c}{}&
+\multicolumn{1}{c}{\textbf{A}}
+&\multicolumn{1}{c}{}&
+\multicolumn{1}{c}{\textbf{B}} \\
+\hline
+$p$ & $q$ & $p\land q$ & $(p\land q)\lto p$ & $p\lor q$ & $p\to (p\lor q)$\\
+\hline
+ T & T & T & T & T & T\\
+ T & F & F & T & T & T\\
+ F & T & F & T & T & T\\
+ F & F & F & T & F & T\\
+\hline
+\end{tabular}
+
+\end{document}
