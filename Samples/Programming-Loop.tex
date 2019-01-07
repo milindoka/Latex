@@ -1,0 +1,13 @@
+\documentclass{article}
+
+\begin{document}
+\newcounter{mycounter}
+\setcounter{mycounter}{2}
+
+\loop
+\ifnum \value{mycounter} < 500
+hello \themycounter,
+\stepcounter{mycounter}
+\repeat
+
+\end{document}
