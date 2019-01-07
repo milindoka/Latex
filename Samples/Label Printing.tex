@@ -1,0 +1,41 @@
+% -*- latex -*-
+% LaTeX sourcecode file for printing 89x36 mm stickers (four on a page).
+% Written by R.F. Smith <rsmith@xs4all.nl> in 2003 and placed in the
+% public domain
+%%%%%%%%%% Normally no changes required below here %%%%%%%%%%
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{tgpagella} % Default fonts
+\usepackage{calligra} % Font for the addresses
+\usepackage[newdimens]{labels}
+\LabelGridtrue
+% Settings for the label package; 4 89x36 stickers.
+\LabelCols=1
+\LabelRows=4
+\LeftPageMargin=60.5mm
+\RightPageMargin=60.5mm
+\TopPageMargin=1mm
+\BottomPageMargin=150mm
+\InterLabelRow=3mm
+% Create an empty label; for if the label has already been used
+\newcommand{\emptylabel}{\rule{0mm}{22mm}}
+%%%%%%%%%%%%%%%%%%%%%% Start of the document %%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\addresslabel{%
+  \texttt{Mr S.\,Holmes\\
+  221b Baker Street\\
+  London NW1\,6XE\\
+  England}
+}
+\addresslabel{%
+  \begin{tabular}{ll}% l,c,r
+    Hostname: & \texttt{guardian}\\
+    Function: & \texttt{router \& firewall}\\
+    IP-address: & \texttt{192.168.2.173}\\
+  \end{tabular}
+}
+%\addr%esslabel{\centering{\calligra\Huge Dry Beans}\\(phaseolus vulgaris)}
+\addresslabel{\centering\Huge \LaTeX{} rules!}
+%%%%%%%%%%%%%% End of the document contents %%%%%%%%%%%%%%%%%%%
+\end{document}
