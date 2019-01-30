@@ -2,71 +2,71 @@
 \usepackage{array}
 \usepackage{multirow}
 \usepackage[center]{titlesec}
+\usepackage{tabu}
 
 \begin{document}
+\pagenumbering{gobble}
 \section*{SIWS College}
 \section*{HSC Practical Examination }
+\section*{MATHEMATICS}
 \section*{February - \the\year }
 \vspace{1cm}
 %-----------------------------------------------------------
 \begin{center}
-\begin{tabular}{ | m{2.5cm} | m{2.5cm}| m{4.6cm} |  m{6cm} | } 
+\begin{tabular}{ | m{2.5cm} | m{2.7cm}| m{4.6cm} |  m{6cm} | } 
   \hline
   Date
   &Batches
   &Time
   &Seat Numbers
   \\ 
-    
+   
   \hline
-  06/01/19
+  \multirow{2}{*}{06/01/19 }
   &1,2,3,4
-  &12:30 pm 01:30 pm
-  &M056633-M056862
-  \\ 
+  &12:30 pm 01:30 pm 
+  &M056633 - M056862 \\\cline{2-4}
   
-  \hline
-  06/01/19
   & 5,6,7,8
   & 2:30 pm 03:30 pm
-  & M056865-M057064
+  & M056865 - M057064
   \\ 
-  
-  
+    
   \hline
-   07/01/19 
+   \multirow{2}{*}{07/01/19 }
     & 9,10,11,12 
-    & cell9 
-    &M057283-M057516
-    \\ 
-  \hline
-  
-    07/01/19 
-    & cell8 
-    & cell9 
-    &M057517-M057609
+    & 12:30 pm 01:30 pm
+    &M057283 - M057516 \\\cline{2-4}
+    
+    & 13,14,15,16 
+    & 2:30 pm 03:30 pm 
+    &M057517 - M057609
     \\ 
   \hline
 
     08/01/19 
-    & cell8 
-    & cell9 
-    &M057517-M057609
+    & 17,18,19
+    & 12:30 pm 01:30 pm 
+    &M057517 - M057609
     \\ 
   \hline
 
-    08/01/19 
-    & cell8 
-    & cell9 
-    &M057517-M057609
-    \\ 
-  \hline
 
 \end{tabular}
+\vspace{1cm}
+
 \end{center}
 %---------------------------------------------------------------------
-\vspace{2cm}
-\section*{Principal/Vice Principal}
+\vspace{2.1cm}
+
+\begin{tabu} to 1\textwidth {X[l] X[r]}
+  & Maths Department\ \ \ \  \\
+ \\ \\ 
+  Principal/Vice-Principal&
+\end{tabu}
+
+
+
 
 
 \end{document}
