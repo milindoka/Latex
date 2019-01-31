@@ -8,9 +8,9 @@
 
 \begin{document}
 \pagenumbering{gobble}
-\section*{SIWS College}
-\section*{HSC Practical Examination }
-\section*{MATHEMATICS}
+\section*{S.I.W.S. College}
+\section*{H.S.C. Practical Examination }
+\section*{MATHEMATICS-SCIENCE}
 \section*{February - \the\year }
 \large
 %\vspace{1cm}
