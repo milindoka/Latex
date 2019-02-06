@@ -1,0 +1,104 @@
+\documentclass[14pt,a4paper]{article}
+\usepackage[a4paper, portrait, top=1cm, left=20mm, bottom=2cm, right=1.5cm]{geometry}
+\usepackage {amsmath}
+\usepackage {amsfonts}
+\usepackage {amssymb}
+\begin{document}
+
+\begin{center}
+\textbf {S. I. W. S. SCIENCE JUNIOR COLLEGE - WADALA.} \\
+\textbf{MATHEMATICS} \\
+Time : 3 Hrs \hspace {3.6cm} \textbf {FYJC - SCIENCE}  \hspace{2.9cm}  Max. Marks : 80
+\end{center}
+
+Note :
+\begin {itemize}
+ 
+\item  All questions are compulsory 
+\item Use of log table is allowed. Use of calculators is \textbf{NOT} allowed
+\item Figures to the right indicate full marks.
+\item The question paper consists of 30 questions divided in to \textbf{FOUR} sections A, B, C and D. 
+\begin {itemize}
+\item Section A contains  6 questions of 1 mark  each.
+\item Section B contains  8 questions of 2 marks each.
+\item Section C contains  6 questions of 3 marks each.
+\item Section B contains 10 questions of 4 marks each.
+\end{itemize}
+\item Graph paper is not necessary for problems on Linear Inequations. Rough graph is accepted.
+\item In case of MCQ (Q1 to Q6) Evaluation would be done for the uncancelled first attempt only. 
+\end{itemize}
+
+% ....  SECTION A Strarts here ....
+
+\begin{center}
+\textbf {Section : A}
+\end{center}
+
+\begin {enumerate}
+\item The value of $p$ if (2, $p$) lies on 
+\item
+\item
+\item
+\item
+\item
+\end{enumerate}
+
+% ....  SECTION A Endss here ....
+% ....  SECTION B Strarts here ....
+
+\begin{center}
+\textbf {Section : B}
+\end{center}
+
+\begin {enumerate}
+\item 
+\item
+\item
+\item
+\item
+\item
+\item
+\item
+\end{enumerate}
+
+% ....  SECTION B Ends here ....
+% ....  SECTION C Strarts here ....
+
+\begin{center}
+\textbf {Section : C}
+\end{center}
+
+\begin {enumerate}
+\item 
+\item
+\item
+\item
+\item
+\item
+\end{enumerate}
+
+% ....  SECTION C Ends here ....
+% ....  SECTION D Strarts here ....
+
+\begin{center}
+\textbf {Section : D}
+\end{center}
+
+\begin {enumerate}
+\item 
+\item
+\item
+\item
+\item
+\item
+\item 
+\item
+\item
+\item
+
+\end{enumerate}
+
+% ....  SECTION D Ends here ....
+
+\end{document}
+

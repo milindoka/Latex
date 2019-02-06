@@ -1,0 +1,96 @@
+\documentclass[17pt]{extarticle}
+\usepackage{amsmath, amssymb}
+\usepackage{nccmath}
+\usepackage[a4paper, total={8in, 11.38in},top=2mm,left=27mm,bottom=2mm,right=5mm]{geometry}
+\usepackage{tikz}
+
+\usepackage{titlesec}
+\titleformat{\section}
+{\normalfont\normalsize\bfseries}{\thesection}{1em}{}
+
+\titleformat{\subsection}
+{\normalfont\normalsize\bfseries}{\thesection}{1em}{}
+
+\usepackage{mathtools}
+
+\usepackage{tasks}
+
+\begin{document}
+
+\noindent
+\begin{fleqn} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Question} 
+
+$\begin{aligned}[t] 
+\text{If \ } y = \cot^{-1} \left[ \frac{\log \, (ex^{-1})}{\log\,(ex)} \right] \text{\quad then\quad}
+\frac{dy}{dx} = \cdots 
+\end{aligned}$
+
+\settasks{counter-format={(tsk[a])},label-offset=1em}
+\begin{tasks}(2)
+  \task $\dfrac{\pi}{4} + \dfrac{1}{1+ (\log x)^2}$ 
+  \task $\tan^{-1}1 + \dfrac{1}{1+ (\log x)^2}$ 
+  \task $\dfrac{1}{x\left[1+ (\log x)^2\right]}$ 
+  \task $\dfrac{1}{x\left[1+ (\log x)^2\right]^2}$ 
+\end{tasks}
+%----------------------------------------
+\subsection*{Answer : (c)}
+\begin{equation} \nonumber
+\begin{alignedat}{4}
+y &= \cot^{-1} \left[ \frac{\log \, (ex^{-1})}{\log\,(ex)} \right]\\
+&= \cot^{-1} \left[ \frac{\log e + \log x^{-1}}{\log e + \log x} \right]\\
+&= \cot^{-1} \left[ \frac{1 - \log x}{1 + \log x} \right]\\
+&= \tan^{-1} \left[ \frac{1 + \log x}{1 - \log x} \right]\\
+\end{alignedat}
+\quad
+\vrule
+\quad
+\begin{alignedat}{4}
+&= \tan^{-1}1 + \tan^{-1}(\log x)\\
+\text{Hence}\\ 
+\frac{dy}{dx} &= \frac{d}{dx}(\tan^{-1}1)+\frac{d}{dx}(\tan^{-1}(\log x) \\
+&= 0 + \frac {1}{1 + (\log x)^2}\, \frac{d}{dx}(\log x) \\
+&= \frac {1}{x\left[1 + (\log x)^2 \right]}\\
+\end{alignedat}
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Question} 
+
+$\begin{aligned}[t] 
+\text{If \ } \sqrt{\frac{x}{y}} + \sqrt{\frac{y}{x}} = 6 \text{ \quad then \quad } \frac{dy}{dx} = \cdots
+\end{aligned}$
+
+\settasks{counter-format={(tsk[a])},label-offset=1em}
+\begin{tasks}(4)
+  \task $\dfrac{y-17x}{17y-x}$ 
+  \task $\dfrac{34y-x}{y-34x}$ 
+  \task $\dfrac{34x-y}{x-34y}$ 
+  \task $\dfrac{17y-x}{y-17x}$ 
+\end{tasks}
+%----------------------------------------
+\subsection*{Answer : (d)}
+\begin{equation} \nonumber
+\begin{alignedat}{4}
+& \quad \sqrt{\frac{x}{y}} + \sqrt{\frac{y}{x}} = 6  \\
+& \text{Squaring} \cdots \\
+& \frac{x}{y} + \frac{y}{x} + 2= 36  \\
+& \therefore x^2 + y^2 = 34xy \\
+\end{alignedat}
+\quad
+\vrule
+\quad
+\begin{alignedat}{4}
+& \therefore 2x + 2y \frac{dy}{dx} = 34\left[x\frac{dy}{dx} + y\right]\\
+& \therefore x + y \frac{dy}{dx} = 17x\frac{dy}{dx} + 17y\\
+& \therefore \frac{dy}{dx} = \frac{17y-x}{y-17x}\\
+\end{alignedat}
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\end{fleqn}
+\end{document} 
