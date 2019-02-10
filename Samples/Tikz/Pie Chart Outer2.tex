@@ -1,0 +1,31 @@
+%https://tex.stackexchange.com/questions/244352/drawing-pie-skill-chart-for-resume
+% Answered by ignasi
+
+\documentclass[tikz,border=2mm]{standalone}
+
+\begin{document}
+\begin{tikzpicture}[font=\sffamily\bfseries\large, 
+     text=white, 
+     border/.style={line width=14mm}]
+\foreach \angle/\col [remember=\angle as \last (initially 0)] in 
+    {60/blue, 
+     120/cyan, 
+     180/green!30!black, 
+     240/green, 
+     300/blue, 
+     360/red}
+     {
+        \draw[\col, border] (\last:2cm) 
+             arc[start angle=\last, end angle=\angle, radius=2cm];
+        \draw[white, line width=1mm] (\last:1.3)--++(\last:1.4);
+}
+%\node[line width=1mm, draw, circle, minimum width=2.5cm, white, fill=blue!%80] {C/C++};
+\node at (60:2cm) {Python};
+\node at (108:2cm) {Other};
+\node at (143:2cm) {Java};
+\node[text width=1cm, align=center, font=\sffamily\bfseries\small] at (185:2cm) 
+    {HTML CSS JS PHP};
+\node at (240:2cm) {Bash};
+\node at (295:2cm) {Android};
+\end{tikzpicture}
+\end{document}
