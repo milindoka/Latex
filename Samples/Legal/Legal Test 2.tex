@@ -1,0 +1,18 @@
+\documentclass[17pt]{extarticle}
+\usepackage[legalpaper, top=0cm,bottom=3cm]{geometry}
+\usepackage{pdfpages}
+
+\usepackage{lastpage}
+%%%%% this is for specially formatted page numbers %%%%%%%%%%%
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyfoot[C]{Page \  \thepage \ of \pageref{LastPage}}
+%\fancyhead[]{0}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5%%
+
+
+\begin{document}
+\pagenumbering{arabic}
+\includepdf[pages=-, pagecommand={}, offset=40 -60]{b.pdf}
+\includepdf[pages=-, pagecommand={}, offset=40 -10]{c.pdf}
+\end{document}
