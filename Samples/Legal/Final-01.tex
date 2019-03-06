@@ -1,0 +1,31 @@
+\documentclass[17pt]{extarticle}
+\usepackage[legalpaper, top=0cm,bottom=2cm]{geometry}
+\usepackage{pdfpages}
+\usepackage{soul}
+
+\usepackage{lastpage}
+%%%%% this is for specially formatted page numbers %%%%%%%%%%%
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyfoot[C]{Page \thepage \ of \pageref{LastPage} }
+%\fancyhead[]{0}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5%%
+
+\begin{document}
+\bf
+\pagenumbering{arabic}
+
+\includepdf[pages=-,  picturecommand*={
+		 \put(290,960){\ul{Exhibit - A}}}, pagecommand={}, offset=40 -10]{A.pdf}
+
+
+\includepdf[pages=-,  picturecommand*={
+		 \put(290,960){\ul{Exhibit - B}}}, pagecommand={}, offset=5 -10]{B.pdf}
+
+\includepdf[pages=-,  picturecommand*={
+		 \put(290,960){\ul{Exhibit - C}}}, pagecommand={}, offset=5 -10]{C.pdf}
+
+\includepdf[pages=-,  picturecommand*={
+		 \put(290,960){\ul{Exhibit - D}}}, pagecommand={}, offset=30 -10]{D.pdf}
+
+\end{document}
