@@ -7,16 +7,20 @@
 \usepackage{rotating}  % Rotate Text (Scissors) in 180 deg
 \thispagestyle{empty}
 
+%%%% background will be in exactly at center if
+% position option is not used
 \backgroundsetup{ %
-  scale=1,       %% Size - change accordingly
-  angle=0,       %% change accordingly
+  scale=1,       %% Size of Scissor - change accordingly
+  angle=0,       %% Scissor angle 0  change accordingly
   opacity=1,    %% change accordingly
   color =black,  %% change accordingly
-  contents={ - - - - - - - - - - - - - \ding{36} - - - - - - - - - - - - -}  
+  contents={ -  - - - - - - - - - - - - - \ding{36} - - - - - - - - - - - -
+  } 
     }
 
 \begin{document}
 \noindent
+test\\
 test\\
 test\\
 test\\
