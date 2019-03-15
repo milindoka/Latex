@@ -1,0 +1,52 @@
+\documentclass{beamer} 
+\usetheme{Berlin}
+\usepackage{showexpl} 
+
+\title{Latex}
+\subtitle{Describe Document !}
+
+
+
+\lstloadlanguages{[LaTeX]Tex} 
+\lstset{% 
+     basicstyle=\ttfamily\small, 
+     commentstyle=\itshape\ttfamily\small, 
+     showspaces=false, 
+     showstringspaces=false, 
+     breaklines=true, 
+     breakautoindent=true, 
+     captionpos=t 
+} 
+
+\begin{document} 
+
+\frame {
+		\titlepage
+	}
+
+
+\frame[containsverbatim]{ 
+
+\begin{LTXexample} 
+\begin{equation} 
+  x^2 + y^2 = z^2. 
+\end{equation} 
+\end{LTXexample} 
+} 
+
+
+
+\frame[containsverbatim]{ 
+\frametitle{Latex is a Markup Language, like HTML}
+
+\begin{LTXexample} 
+\begin{itemize} 
+  \item First. 
+  \item Second.
+  \item Third.
+\end{itemize} 
+\end{LTXexample} 
+ 
+} 
+
+\end{document}
