@@ -2,17 +2,18 @@
 \usepackage[a4paper]{geometry}% just for the example
 \usepackage[placment=top]{background}
 \usepackage{draftwatermark}
-
+\usepackage{tikz}
 \backgroundsetup{%
   scale=1,       %% Size - change accordingly
   angle=0,       %% change accordingly
-  opacity=0.3,    %% change accordingly
+  opacity=0.5,    %% change accordingly
   color =black,  %% change accordingly
   contents={\includegraphics[width=0.5\paperwidth,height=0.35\paperheight]{BirdLogo.png}
     }%}    
     }
 \begin{document}
 \noindent
-test\\
-test\\
+\begin{tikzpicture}
+\draw[step=1cm,gray,very thin] (-12,-2) grid (-1,10);
+\end{tikzpicture}
 \end{document}
