@@ -1,0 +1,30 @@
+\documentclass{article}
+\usepackage[a4paper]{geometry}% just for the example
+\usepackage{background}
+\usepackage{pifont}    % For Pair Of Scissors
+\usepackage{rotating}  % Rotate Text (Scissors) in 180 deg
+\thispagestyle{empty}
+\usepackage{draftwatermark}
+%\SetWatermarkText{\hspace*{-.1cm}\includegraphics[scale=1]{example-image-%a.pdf}}
+\SetWatermarkAngle{0}
+
+
+\backgroundsetup{%
+  scale=1,       %% Size - change accordingly
+  angle=0,       %% change accordingly
+  opacity=0.5,    %% change accordingly
+  color =black,  %% change accordingly
+  contents={\includegraphics[width=0.5\paperwidth,height=0.35\paperheight]{example-image}
+  }%}    %% yshift and xshift for example only
+    }
+
+\begin{document}
+\noindent
+test\\
+test\\
+test\\
+test\\
+test\\
+test\\
+test\\
+\end{document}
