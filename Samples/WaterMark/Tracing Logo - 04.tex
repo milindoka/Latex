@@ -3,6 +3,7 @@
 \usepackage[placment=top]{background}
 \usepackage{draftwatermark}
 \usepackage{tikz}
+\usepackage{xcolor}
 \backgroundsetup{%
   scale=1,       %% Size - change accordingly
   angle=0,       %% change accordingly
@@ -12,6 +13,9 @@
   contents={\includegraphics[width=0.5\paperwidth,height=0.35\paperheight]{BirdLogo.png}
     }%}    
     }
+    
+\definecolor{birdcolor}{RGB}{0,128,128}
+\definecolor{eyecolor}{RGB}{55,200,113}
 \begin{document}
 \begin{tikzpicture}
 \draw[step=1cm,gray,very thin] (-12,-2) grid (-1,10);
