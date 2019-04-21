@@ -1,0 +1,12 @@
+\documentclass{extarticle}
+
+\begin{document}
+\newcounter{mycounter}
+\setcounter{mycounter}{1}
+\loop
+\ifnum \value{mycounter} < 1300
+\themycounter,
+\stepcounter{mycounter}
+\repeat
+
+\end{document}
