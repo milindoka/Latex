@@ -1,0 +1,14 @@
+\documentclass{article}
+
+\begin{document}
+
+\fbox{\begin{picture}(230,220)
+\global\count1=0
+\multiput(10,180)(0,-20){10}{%
+\multiput(10,10)(20,0){10}{%
+  \global\advance\count1 1
+   \framebox(15,15){\ifnum\count1>0 \the\count1 \fi}
+}}
+\end{picture}}
+
+\end{document}
