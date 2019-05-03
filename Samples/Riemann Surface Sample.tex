@@ -2,7 +2,7 @@
 \usepackage{pgfplots}
 \begin{document}
 
-\begin{tikzpicture}
+\begin{tikzpicture}[scale=1.8]
   \begin{axis}[
     unbounded coords=jump,
     z filter/.expression={z > pi - 1e-2 ? nan : z},

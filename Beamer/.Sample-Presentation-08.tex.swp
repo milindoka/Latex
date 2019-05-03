@@ -1,0 +1,124 @@
+\documentclass{beamer} 
+\usetheme{Berlin}
+\usepackage{showexpl} 
+\usepackage{tikz}
+\title{Latex}
+\subtitle{Describe The Document !}
+
+
+
+\lstloadlanguages{[LaTeX]Tex} 
+\lstset{% 
+     basicstyle=\ttfamily\small, 
+     commentstyle=\itshape\ttfamily\small, 
+     showspaces=false, 
+     showstringspaces=false, 
+     breaklines=true, 
+     breakautoindent=true, 
+     captionpos=t 
+} 
+
+
+\begin{document} 
+
+
+\frame {
+		\titlepage
+	}
+
+
+
+\frame[containsverbatim]{ 
+\frametitle{Latex is a Markup Language, like HTML}
+
+\begin{LTXexample} 
+\begin{itemize} 
+  \item First item 
+  \item Second.
+  \item Third.
+\end{itemize} 
+\end{LTXexample} 
+ 
+} 
+
+
+
+
+
+\frame[containsverbatim]
+{
+\frametitle{Latex is a Markup Language, like HTML} 
+\begin{LTXexample} 
+
+\begin{align}
+\sqrt{37} & = \sqrt{\frac{73^2-1}{12^2}} \\
+ & = \sqrt{\frac{73^2}{12^2}\cdot\frac{73^2-1}{73^2}} \\ 
+ & = \sqrt{\frac{73^2}{12^2}}\sqrt{\frac{73^2-1}{73^2}} \\
+ & \approx \frac{73}{12}\left(1 - \frac{1}{2\cdot73^2}\right)
+\end{align}
+\end{LTXexample}
+} 
+
+
+
+
+\frame
+{
+\section{ }
+Question : The slant height of a right circular cone is 3 cm. Find the height of cone, if its volume is the greatest.\\
+%----------------------------------------
+\vspace{0.4cm}
+Solution : Let  r  and x  be the base-radius and the height of the cone respectively. Then the volume f(x) of the cone is given by
+
+\begin{equation} \nonumber
+\begin{alignedat}{4}
+f(x) &= \frac{1}{3}\pi r^2x\\
+&= \frac{\pi}{3}(3^2-x^2)x\\
+&= \frac{\pi}{3}(9x - x^3)\\
+\therefore f'(x) &=  \frac{\pi}{3}(9 - 3x^2)\\
+\end{alignedat}
+%\vrule
+\quad\quad\quad
+\begin{alignedat}{4}
+\begin{tikzpicture}
+\filldraw[fill=gray!20](0,0) ellipse (2cm and 0.6cm);
+\draw (0,0) -- node[below] {\ \ \ $x$}(0,3.5);
+\draw (0,0)  -- node[below] {\ \ \ $r$} (-2,0);
+\draw  (-2,0) --node[above] {3\ \ }(0,3.5);
+\draw  (2,0) -- (0,3.5);
+\end{tikzpicture}\\\\
+\end{alignedat}
+\end{equation}
+}
+
+
+\frame[containsverbatim]
+{
+\frametitle{Latex is a Markup Language, like HTML} 
+\begin{LTXexample} 
+$$  x^2 + y^2 = z^2 $$
+$$ \int \frac{x^5 - 4x^3 + 6x}{x}\ dx$$
+$$\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$$
+\end{LTXexample}
+} 
+
+
+
+
+
+
+
+\frame[containsverbatim]{ 
+\frametitle{Latex is a Markup Language, like HTML}
+
+\begin{LTXexample} 
+\begin{itemize} 
+  \item First item 
+  \item Second.
+  \item Third.
+\end{itemize} 
+\end{LTXexample} 
+ 
+} 
+
+\end{document}
