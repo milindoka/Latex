@@ -47,7 +47,7 @@
 
 \frame[containsverbatim]
 {
-\frametitle{Latex is a Markup Language, like HTML} 
+\frametitle{... but much more powerful than HTML} 
 \begin{LTXexample} 
 
 \begin{align}
@@ -59,16 +59,26 @@
 \end{LTXexample}
 } 
 
+\frame[containsverbatim]
+{
+\frametitle{Made for Maths but its a multipurpose tool} 
+\begin{LTXexample} 
+$$  x^2 + y^2 = z^2 $$
+$$ \int \frac{x^5 - 4x^3 + 6x}{x}\ dx$$
+$$\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$$
+\end{LTXexample}
+} 
 
 
 
 \frame
 {
+\frametitle{Seamless Graphics and Text mixture } 
 \section{ }
 Question : The slant height of a right circular cone is 3 cm. Find the height of cone, if its volume is the greatest.\\
 %----------------------------------------
 \vspace{0.4cm}
-Solution : Let  r  and x  be the base-radius and the height of the cone respectively. Then the volume f(x) of the cone is given by
+Solution : Let r  and x  be the base-radius and the height of the cone respectively. Then volume of the cone f(x) is given by
 
 \begin{equation} \nonumber
 \begin{alignedat}{4}
@@ -80,7 +90,7 @@ f(x) &= \frac{1}{3}\pi r^2x\\
 %\vrule
 \quad\quad\quad
 \begin{alignedat}{4}
-\begin{tikzpicture}
+\begin{tikzpicture}[scale=0.8]
 \filldraw[fill=gray!20](0,0) ellipse (2cm and 0.6cm);
 \draw (0,0) -- node[below] {\ \ \ $x$}(0,3.5);
 \draw (0,0)  -- node[below] {\ \ \ $r$} (-2,0);
@@ -92,15 +102,6 @@ f(x) &= \frac{1}{3}\pi r^2x\\
 }
 
 
-\frame[containsverbatim]
-{
-\frametitle{Latex is a Markup Language, like HTML} 
-\begin{LTXexample} 
-$$  x^2 + y^2 = z^2 $$
-$$ \int \frac{x^5 - 4x^3 + 6x}{x}\ dx$$
-$$\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$$
-\end{LTXexample}
-} 
 
 
 
