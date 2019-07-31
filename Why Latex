@@ -1,0 +1,74 @@
+From Internet Forums :
+
+I used LaTeX to write my thesis in marine biology. Personally, I'd recommend it. It arranges the figures for you, formats the chapters and bibliography, and numbers everything (chapters, tables, figures, etc) in order so you don't have to worry about it. I reversed the order of my chapters after writing and it just seamlessly worked everything out for me while for Word I would have had to renumber everything manually (there's probably a macro to do it, but I don't know of it). And, with LaTeX you can use Github to track your progress and changes.
+
+In terms of the learning curve, most schools have a template that you can download and this makes life much easier than if you had to make one yourself. If you've used R or Matlab then I don't think you'll have any issues. I learned R and LaTeX during my master's and didn't find it too difficult. Google will be your friend when you want to do something but haven't learned how yet; most issues are easily searchable.
+
+
+
+https://mildopinions.wordpress.com/2008/07/07/why-i-use-latex-in-biology/     :
+
+Why I use LaTeX in Biology.
+
+[Note:  In some ways I’m putting the cart before the horse here, because I should probably have a post introducing LaTeX before I go on a rant / justification for my usage of it.  However, I’m not in the mood to write that post today, so you can go here or here for further information until I get around to it.]
+
+The title of this post is a little disingenuous;  it should perhaps be titled “Why I use LaTeX in spite of the field of biology.”  LaTeX seems to be less well known here, though I was introduced to it by my M.Sc adviser, who was a biologist (in a psychology department, of all places).  People have no clue what I’m talking about when I mention LaTeX, and many of the journals don’t accept it.  The situation is even worse in the field I came from, psychology, but it’s still bad enough to cause me despair here.  Yet despite the impaired status of LaTeX in biology, I continue to use it with pride, and here’s why I use it instead of Microsoft Word.
+
+LaTeX lets you abstract content from formatting.
+To me, this is one of the most important points about LaTeX to be made, and yet it is also one of the most difficult to convey (a good attempt is here).  Computer science people will grasp this point almost immediately, because they’re used to doing this sort of abstraction as easily as they breathe, but it’s not so easy for other people.  So let me take a crack at it:
+
+When you prepare a document, you go through two stages to complete the task.  First, you write the content:
+
+My essay on life.
+
+The quick brown fox jumps over the lazy something or other.  You can tell it was lazy, because it was too lazy to look itself up and put it in my sentence like a good little whatsit, and now I’m very cross with it.  Really, what is the world coming to these days?  Lazy whosits and disrespectful thingamajigs.  Hell in a hand-something or other, I say!
+
+That, there, is content.  The next stage is formatting for the printed page:
+
+My essay on life.
+The quick brown fox jumps over the lazy something or other.  You can tell it was lazy, because it was too lazy to look itself up and put it in my sentence like a good little whatsit, and now I’m very cross with it.  Really, what is the world coming to these days?  Lazy whosits and disrespectful thingamajigs.  Hell in a hand-something or other, I say!
+
+That is formatting, or at least some version of it.  Real documents would probably have a lot more formatting in them, like margins and figures and carefully placed page-breaks and the like, but the essence of the argument can proceed from what you see above.  Now here is the step that Microsoft Word slaves users have to pay attention to:
+
+Formatting and content are two separate steps!
+
+Content comes first, and it is the responsibility of the author;  formatting comes second, and it is the responsibility of the typesetter.  In many cases this will be the same person, but scientists need to pay attention to this because often the journal has its own ideas about how a document should look!  The beauty of LaTeX is that it allows us to mark-up our content so that typesetting can be applied by a journal without us having to do a single thing to it (well, often the journal will give us a document class file to use like Elsevier does, but the point is that the class file does all of the work for us).  If we structure our document properly when we generate the content –  placing appropriate tags like \abstract, \title, \appendix, etc., the journal can manipulate our content as it wishes to create the final product that you see.
+
+Microsoft Word has the unfortunate problem of mixing up those two steps so that people who use Word do the two logically separate steps above at the same time, and it does so without any abstraction.  How do you mark part of a Word document as the abstract, or an appendix?  You can’t, and so there is no way of making those parts of the document accessible for separate handling.
+
+Who cares, you ask?  You might want to look around at the web page you’re looking at right now, because it was the adoption of the same sort of model that allowed standards compliant web pages and the explosion of Web 2.0 to really come into their own.  HTML as it used to be mixed up content and formatting, so that you’d have content tags like <body> and <head> mixed in with formatting tags like <b> and <em>.  It was only when they took the step of separating the content (HTML and XHTML) from the formatting (CSS) that the mess that was web-design could sort itself out.
+
+Using LaTeX (or TeX) allows you to use BibTeX.
+Oh. My. God.  What did I ever do before BibTeX?
+
+Actually, a lot of the reason I get so much joy out of using BibTeX is because I use BibDesk and Skim to store, cross-reference and annotate my .PDFs of journal articles as well as manage my citations.  That said, though, BibTeX all on its own is a compelling reason for scientists to use TeX/LaTeX.
+
+For those of you who don’t know, BibTeX is a bibliographic management system for LaTeX that allows you to cite your papers with ease in a LaTeX document.  Instead of having to keep the citations in your paper straight manually, and manually type them out, you maintain a bibliographic database with all of your citations and then sprinkle citations in your text using commands like \cite{SomeAuthor:95}.  Then, when your process your LaTeX source with LaTeX and BibTeX, you wind up with a document containing properly formatted citations and a complete bibliography which is automatically formatted for you!  As an added bonus, this is type-once-use-forever, because one a citation is in your bibliographic database, it can be used in every document you create at will.
+
+Another bonus is that BibTeX is another example of abstracting content from formatting.  Because your citations are marked up properly in your bibliographic database, you can easily switch from one bibliography style to another.  I recently submitted a paper to one journal after it had been rejected from another;  doing so required changing bibliography formatting and citation style.  Under MS Word, this would have been a laborious process of search and replace throughout the entire document, followed by a complete rewrite of the bibliography.  Under LaTeX, this required modifying two lines of code and took me exactly five minutes. (Most of that time was spent looking up the required modification on Google).
+
+Other advantages to LaTeX.
+Those are two of the biggest advantages to LaTeX, and they are among the things that I absolutely cannot live without;  any replacement to LaTeX for me would require having those characteristics, and I’m not aware of any other document preparation system that can do that.  There are also some other advantages that I should mention:
+
+LaTeX is great for mathematics.  Really, it is.  You can produce beautiful mathematical typesetting with a minimum of effort.  This is part of the reason that LaTeX is so popular in fields like computer science, mathematics, and physics.  Pick a book in any of those fields off the shelf, and there’s a fairly good chance that it was typeset with LaTeX.
+LaTeX produces beautiful documents.
+LaTeX is open-source, free (as in speech and free as in beer) software.  You don’t have to pay hundreds of dollars to have it.  (It also easily produces PDFs, which are great for exchanging documents with people.  Word is not good for document exchange.)
+LaTeX is cross-platform, and LaTeX source files are just plain text so they can be edited anywhere with just about any editor you can imagine.  On the other hand, there are plenty of great editors for LaTeX (emacs is one I often use on Linux, and if you’re on a Mac, TeXShop is hard to beat for my money).
+Disadvantages of LaTeX.
+Are there any?  Yes, there are.  To be fair, using LaTeX can sometimes be an uphill battle, for these reasons:
+
+There’s a learning curve.  People are used to WYSIWYG editors, and trying to convince them to use LaTeX can be like pulling teeth.  Learning to use LaTeX properly takes some thought and effort, and some swearing every once in a while.
+Related to point 1, co-authors may not use LaTeX.  That may put you back on the Word train.
+For that matter, journals may not accept LaTeX.  If you’re in a field with a deep connection to mathematics this is unlikely to be as common a problem for you as if you’re in a field like mine (behavioural ecology).  There’s no easy way to convert a TeX document to a Word document, because Word is a proprietary binary file format that cannot easily be studied to produce such a conversion;  you can thank Microsoft for trying to keep you locked into their system.  Having said that, there are a few things you can try.  Look here for more.
+There’s no support – well, no official support, anyway.  There’s no one that you can call up to yell at if something goes wrong.  On the other hand, like many open source efforts, there is a fantastic community around LaTeX on the web.  People like TeX and LaTeX so much that they join user groups. But for people used to the world of paid support, this can be a daunting proposition.
+LaTeX was made by computer people, and the error messages can be … difficult … to parse.  There’s definitely a bit of magic to it.  For that matter, error messages are a downside of themselves, because Word rarely tells you that your document can’t be processed.  (If it does, that’s usually a catastrophe of epic proportions, meaning that your document is probably garbled or gone).
+The final words, and further reading.
+On the whole, I firmly believe that the advantages of LaTeX far outweigh the disadvantages, and despite the lesser status of LaTeX in biology (and behavioural ecology in particular), I’ll keep using it until they pry it from my cold, dead hands.  If you’d like to know more about LaTeX, here’s a few resources and articles to look at:
+
+Word processors:  Stupid and Inefficient, by Allin Cottrell.
+How LaTeX helps me to write a paper without Microsoft Word, at The Productive Student.
+What the heck is LateX?
+The LaTeX project:  getting LaTeX, LaTeX info, and great links.
+The TeX Users Group:  support and more.
+Feel free to post your comments with your LaTeX experiences or general thoughts on the matter!
+

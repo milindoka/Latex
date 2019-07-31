@@ -3,6 +3,16 @@
 \usepackage{showexpl} 
 \usepackage{tikz}
 \usepackage{chemfig}
+\usepackage[utf8]{inputenc}
+
+\usepackage{circuitikz}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{multicol}
+\usepackage{ragged2e}
+
+
+
 \title{Latex}
 \subtitle{Describe The Document !}
 
@@ -121,6 +131,55 @@ Default angle units : 1 unit = 45$^{\circ}$. Hence in the following example, the
  
 } 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\frame[containsverbatim]{ 
+\frametitle{Physics Circuits with Package 'circuitikz' }
+
+\begin{circuitikz}[american voltages]
+\draw
+  (0,0) to [short, *-] (6,0)
+  to [V, l_=$\mathrm{j}{\omega}_m \underline{\psi}^s_R$] (6,2) 
+  to [R, l_=$R_R$] (6,4) 
+  to [short, i_=$\underline{i}^s_R$] (5,4) 
+  (0,0) to [open, v^>=$\underline{u}^s_s$] (0,4) 
+  to [short, *- ,i=$\underline{i}^s_s$] (1,4) 
+  to [R, l=$R_s$] (3,4)
+  to [L, l=$L_{\sigma}$] (5,4) 
+  to [short, i_=$\underline{i}^s_M$] (5,3) 
+  to [L, l_=$L_M$] (5,0); 
+  (0,0) to[nos] (8,0); 
+  \end{circuitikz}
+ 
+} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\frame[containsverbatim]{ 
+\frametitle{Three Column Magazine Format }
+
+% column divider
+%\setlength\columnseprule{0.5pt}
+
+
+\begin{multicols}{3}
+\justify
+\blindtext
+\end{multicols}
+
+ 
+} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
 
 \end{document}
