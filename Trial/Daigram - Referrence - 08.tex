@@ -104,10 +104,10 @@
 \begin{LTXexample}[pos=b,preset=\centering,width=1\linewidth]
   \begin{tikzpicture}
     \draw[very thin, gray!30, step=1 cm](0,0) grid (8,8);
-    \draw [thick] [->] (0,0)--(8,0) node[right, below] {$x$};
+    \draw [thick] [->] (0,0)--(8,0) node[right] {$x$};
      \foreach \x in {0,...,8}
        \draw[xshift=\x cm, thick] (0pt,-1pt)--(0pt,1pt) node[below] {$\x$};
-      \draw [thick] [->] (0,0)--(0,8) node[above, left] {$y$};
+      \draw [thick] [->] (0,0)--(0,8) node[above] {$y$};
      \foreach \y in {0,...,8}
        \draw[yshift=\y cm, thick] (-1pt,0pt)--(1pt,0pt) node[left] {$\y$};
    
