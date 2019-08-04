@@ -92,34 +92,13 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-\section {Pair Of Straight Lines}
-
-\begin{lstlisting}
-=====================
-Requires :
-{\usepackage{gensymb}
-\usetikzlibrary{arrows.meta}
-==============
-\end{lstlisting}
-
+\section {More Organic Compounds}
 
 \begin{LTXexample}[pos=b,preset=\centering,width=1\linewidth]
-\begin{tikzpicture}
-\draw [>={LaTeX[width=2mm,length=2.3mm]},<->](-3,0) -- (3,0); %% X-AXIS
-\draw [>={LaTeX[width=2mm,length=2.3mm]},->](0,-2)  -- (0,3); %% Y-AXIS
-\draw (-3,2) -- (3,2);
-\draw (-0.86,-1.5) -- (1.73,3);
-\draw (-1.73,3) -- (0.86,-1.5);
-\draw (0,0) node[anchor=north east,yshift=4pt] {$o$} ;
-\draw (0,0) node[anchor=north, xshift=45pt, yshift=77pt] {$A$} ;
-\draw (0,0) node[anchor=north, xshift=-47pt, yshift=77pt] {$B$}; 
-\draw (0,0) node[anchor=north, xshift=50pt, yshift=40pt, font=\scriptsize] {$120\degree$};
-\draw (0,0) node[anchor=north, xshift=25pt, yshift=20pt, font=\scriptsize] {$30\degree$};
-\draw[-latex] (0:0.6cm) arc (0:60:0.6cm);
-\draw[-latex] (0:1.5cm) arc (0:120:1.5cm);
-\end{tikzpicture}
-
+  \vspace{5mm}
+  \definesubmol\Me[H_3C]{CH_3}
+\chemfig{**6((-!\Me)=(-!\Me)-(-!\Me)=(-!\Me)-(-!\Me)=(-!\Me)-)}
+  \vspace{5mm}
 \end{LTXexample}
 \pagebreak
 
