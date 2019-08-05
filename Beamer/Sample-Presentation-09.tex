@@ -101,7 +101,7 @@ $$\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$$
  
 \begin{LTXexample} 
 \begin{tikzpicture}
-\shade (0,0) circle (.5cm); 
+\fill[blue!40!white] (0,0) rectangle (5,2);
 \end{tikzpicture}
 \end{LTXexample} 
 
@@ -112,11 +112,31 @@ $$\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
+\frame[containsverbatim]{ 
+\frametitle{Gradient}
+
+\begin{LTXexample} 
+\begin{tikzpicture}
+\shade[left color=red,right color=yellow]
+(0,0) rectangle (5,4);
+\end{tikzpicture}
+\end{LTXexample}
+ 
+} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
+\frame[containsverbatim]{ 
+\frametitle{Gradient}
 
-
-
+\begin{LTXexample} 
+\begin{tikzpicture}
+\shade[inner color=yellow,outer color=blue] (0,0) rectangle (5,4);
+\end{tikzpicture}
+\end{LTXexample}
+ 
+} 
 
 
 
@@ -226,17 +246,7 @@ Default angle units : 1 unit = 45$^{\circ}$. Hence in the following example, the
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\frame[containsverbatim]{ 
-\frametitle{Gradient}
 
-\begin{LTXexample} 
-\begin{tikzpicture}
-\shade[left color=red,right color=yellow]
-(0,0) rectangle (5,4);
-\end{tikzpicture}
-\end{LTXexample}
- 
-} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -265,10 +275,16 @@ Default angle units : 1 unit = 45$^{\circ}$. Hence in the following example, the
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \frame[containsverbatim]{ 
-\frametitle{Blank }
-
-
- 
+\frametitle{Program Like Logo }
+\begin{LTXexample} 
+\begin{tikzpicture}
+\foreach \n in {0,...,13}
+      \draw [blue]
+         (\n/4,0.4) circle [radius = 1]
+         (\n/4,0) circle [radius = 1]
+         (\n/4,-0.4) circle [radius = 1] ;
+\end{tikzpicture}
+\end{LTXexample} 
 } 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
