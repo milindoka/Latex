@@ -1,0 +1,35 @@
+\documentclass[17pt]{extarticle}
+\usepackage[left=1.5cm,right=1.5cm,top=1.5cm,bottom=1.5cm,ignoreheadfoot]{geometry}
+\usepackage{array}
+\usepackage[svgnames,table]{xcolor}
+
+\newcommand*{\arraycolor}[1]{\protect\leavevmode\color{#1}}
+\newcolumntype{A}{>{\columncolor{blue!50!white}}c}
+\newcolumntype{B}{>{\columncolor{LightGoldenrod}}c}
+\newcolumntype{C}{>{\columncolor{FireBrick!50}}c}
+\newcolumntype{D}{>{\columncolor{Gray!42}}c}
+
+\begin{document}    
+
+\begin{center}
+\sffamily
+\arrayrulecolor{white}
+\arrayrulewidth=1pt
+\renewcommand{\arraystretch}{1.5}
+\rowcolors[\hline]{3}{.!50!White}{}
+\begin{tabular}{A|B|C}
+  \multicolumn{3}{D}{\bfseries Example table}\\
+  \rowcolor{.!50!Black}
+  \arraycolor{White}\bfseries First column &
+  \arraycolor{White}\bfseries Second column&
+  \arraycolor{White}\bfseries Third column\\
+  1 & A & E\\
+  2 & B & F\\
+  3 & C & G\\
+  4 & D & H\\
+\end{tabular}
+\end{center}
+
+\end{document}
+
+enter image description here
