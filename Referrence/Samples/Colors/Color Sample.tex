@@ -1,0 +1,21 @@
+\documentclass[border=10pt,varwidth]{standalone}
+\usepackage{pgffor}
+\usepackage[x11names]{xcolor}
+ 
+\newcommand\colorrulemix[1]{\textcolor{#1!40!gray}{\rule{1cm}{1cm}} }
+\newcommand\colorrule[1]{\textcolor{#1}{\rule{1cm}{1cm}} }
+ 
+\begin{document}
+ 
+\begin{center}
+\foreach \name in {{red},{orange},{yellow},{green},{cyan},{blue},{purple}} {%
+    \colorrule{\name}}
+     
+\rule{\linewidth}{1pt}
+\phantom{}\par
+ 
+ 
+\foreach \name in {{red},{orange},{yellow},{green},{cyan},{blue},{purple}} {%
+    \colorrulemix{\name}}
+\end{center}
+\end{document}

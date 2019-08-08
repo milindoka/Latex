@@ -1,0 +1,48 @@
+\documentclass{article}
+\usepackage{tikz-cd}
+
+\definecolor{cof}{RGB}{219,144,71}
+\definecolor{pur}{RGB}{186,146,162}
+\definecolor{greeo}{RGB}{91,173,69}
+\definecolor{greet}{RGB}{52,111,72}
+
+\begin{document}
+
+\begin{tikzcd}[execute at end picture={
+\foreach \Nombre in  {A,B,...,H}
+  {\coordinate (\Nombre) at (\Nombre.center);}
+\fill[pur,opacity=0.3] 
+  (A) -- (B) -- (C) -- (D) -- cycle;
+\fill[greeo,opacity=0.3] 
+  (A) -- (D) -- (H) -- (E) -- cycle;
+\fill[cof,opacity=0.3] 
+  (H) -- (D) -- (C) -- (G) -- cycle;
+}]
+&
+|[alias=B]|P
+\ar{dl}[swap, sloped, near start]{t}
+\ar{rr}{t'}
+\ar[]{dd}[near end]{t}
+& & |[alias=C]|R''
+\ar{dd}{}
+\ar{dl}[swap, sloped, near start]{}
+\\
+|[alias=A]|R
+\ar[crossing over]{rr}[near start]{}
+\ar{dd}[swap]{}
+& & |[alias=D]|S''
+\\
+&
+|[alias=F]|R'
+\ar[near start]{rr}{}
+\ar[sloped, near end]{dl}{}
+& & |[alias=G]|S
+\ar{dl}
+\\
+|[alias=E]|S'
+\ar{rr}
+& & |[alias=H]|P'
+\ar[crossing over, leftarrow, near start]{uu}{}
+\end{tikzcd}
+
+\end{document}
