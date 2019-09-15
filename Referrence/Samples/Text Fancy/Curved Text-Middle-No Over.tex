@@ -1,0 +1,17 @@
+\documentclass[11pt]{article}
+\usepackage{tikz}
+\usetikzlibrary{decorations.text}
+
+\begin{document}
+\begin{tikzpicture}
+
+\path[draw=blue, -stealth,
+  postaction={decorate,decoration={text effects along path,
+    text={\ Positive direction\ }, text align=center,
+    text effects/.cd, 
+      text along path, 
+      every character/.style={fill=white, yshift=-0.5ex}}}]
+  (4, 0) arc [start angle=-60, end angle=80, radius=4];
+
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,15 @@
+\documentclass[11pt]{article}
+\usepackage{tikz}
+\usetikzlibrary{decorations.text}
+
+\begin{document}
+
+\begin{tikzpicture}
+\path[decorate,decoration={text along path,
+text={Positive direction},text align=center}]
+(4,0) arc [start angle=-60,end angle=80,radius=4];
+\draw[-latex,blue]
+(4cm,0.8ex) arc [start angle=-60,end angle=80,radius=4cm-0.8ex];
+\end{tikzpicture}
+
+\end{document}

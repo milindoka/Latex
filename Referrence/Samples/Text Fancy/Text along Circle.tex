@@ -1,0 +1,17 @@
+\documentclass[11pt]{article}
+\usepackage{tikz}
+\usetikzlibrary{decorations.text}
+
+\begin{document}
+\begin{tikzpicture}
+
+\path[draw=blue, -stealth,
+  postaction={decorate,decoration={text effects along path,
+    text={\ Positive direction\ }, text align=right ,
+    text effects/.cd, 
+      text along path, 
+      every character/.style={fill=white, yshift=-0.5ex}}}]
+  (4, 0) circle(3);
+
+\end{tikzpicture}
+\end{document}
