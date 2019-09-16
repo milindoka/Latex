@@ -1,0 +1,8 @@
+\documentclass{article}
+\usepackage{tikz}
+\begin{document}
+\begin{tikzpicture}
+    \draw [domain=0:25.1327,variable=\t,smooth,samples=75]
+        plot ({\t r}: {0.002*\t*\t});
+\end{tikzpicture}
+\end{document}
