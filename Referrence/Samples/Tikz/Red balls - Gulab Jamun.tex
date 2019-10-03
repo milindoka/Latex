@@ -1,0 +1,14 @@
+\documentclass[17pt]{extarticle}
+\usepackage{tikz}
+\usetikzlibrary{fadings}
+\begin{document}
+\tikzfading[name=fade inside,
+inner color=transparent!0,
+outer color=transparent!30] 
+\begin{tikzpicture}
+\shade[ball color=red,path fading=fade inside] (0,0) circle (1.8);
+\begin{scope}[xshift=3cm]
+\shade[ball color=red,path fading=fade inside] (0,0) circle (1.8);
+\end{scope}
+\end{tikzpicture}
+\end{document}
