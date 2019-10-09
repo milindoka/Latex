@@ -1,0 +1,13 @@
+\documentclass[17pt]{extarticle}
+\usepackage{tikz}
+\begin{document}
+\begin{tikzpicture}
+
+  \foreach \x/\y in {1/blue, 1.5/red, 2/yellow, 2.5/green}
+   { \fill[color=\y] (\x,0) rectangle +(1,1);
+ %   \draw[color=\y] (5,5) -- (1,1);
+  \draw[color=\y] (5,5) circle (\x);
+  }
+\end{tikzpicture}
+
+\end{document}

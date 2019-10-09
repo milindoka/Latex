@@ -1,0 +1,18 @@
+\documentclass[17pt]{extarticle}
+\usepackage{tikz}
+\begin{document}
+\begin{tikzpicture}
+
+  \foreach \x/\y in 
+  {1/black, 2/blue, 3/brown, 4/cyan,5/darkgray,6/gray,7/green,8/lime,9/magenta,10/olive,11/pink,12/purple,13/red,14/teal,15/violet,16/white,17/yellow}
+   { \fill[color=\y] (0,\x) rectangle +(1,1);
+  }
+\end{tikzpicture}
+
+\end{document}
+
+black 	blue 	brown 	cyan
+darkgray 	gray 	green 	lime
+magenta 	olive 	orange 	pink
+purple 	red 	teal 	violet
+white 	yellow 		
