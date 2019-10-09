@@ -1,0 +1,25 @@
+% hello.tex - Our first LaTeX example!
+
+\documentclass[17pt]{extarticle}
+\usepackage{tikz}
+\begin{document}
+\begin{tikzpicture}
+\\begin{tikzpicture}[cap=round,line width=3pt]
+  \filldraw [fill=yellow] (0,0) circle (2cm);
+
+  \foreach \angle / \label in
+    {0/3, 30/2, 60/1, 90/12, 120/11, 150/10, 180/9,
+     210/8, 240/7, 270/6, 300/5, 330/4}
+  {
+    \draw[line width=1pt] (\angle:1.8cm) -- (\angle:2cm);
+    \draw (\angle:1.4cm) node{\textsf{\label}};
+  }
+
+  \foreach \angle in {0,90,180,270}
+    \draw[line width=2pt] (\angle:1.6cm) -- (\angle:2cm);
+
+  \draw (0,0) -- (120:0.8cm); % hour
+  \draw (0,0) -- (90:1cm);    % minute
+\end{tikzpicture}
+
+\end{document}

@@ -1,0 +1,22 @@
+% hello.tex - Our first LaTeX example!
+
+\documentclass[17pt]{extarticle}
+\usepackage{tikz}
+\begin{document}
+\begin{tikzpicture}
+\\begin{tikzpicture}[cap=round,line width=3pt]
+ \draw (0,0) circle (2cm);
+
+  \foreach \angle / \y in
+    {0/red, 30/blue
+    %, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330
+     }
+  {
+    \draw[line width=2pt] (\angle:0.5cm) -- (\angle:2cm);
+ 
+  }
+
+ 
+\end{tikzpicture}
+
+\end{document}
