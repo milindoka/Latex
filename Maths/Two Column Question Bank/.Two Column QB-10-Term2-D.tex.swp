@@ -258,7 +258,51 @@ logarithm.
 	(a) f ◦ g
 	(b) f ◦ f	
 
+\item Verify that $ f $  and  $ g $ are inverse functions of each other, where (a) $ f(x) = \frac { x - 7 }{4}, g(x) = 4x + 7 $ (b) $ f(x) = x^3 + 4, g(x) = \sqrt[3]{x - 4 } $
+
+\item $ f(x) = 2 \left| x \right| + 3x $ then find (a) $ f(2)$ (b) $ f(-5) $
+
 \end{enumerate} 
+
+%%%////////////////////////////////////
+\section{Limits}
+\noindent
+\begin{enumerate}
+ \item Evaluate : $ \lim\limits_{x \to 2} \frac{ x^{-3} - 2^{-3}}{x-2} $
+ 
+\item If $ \lim\limits_{x \to 2} \frac{ x^4 - 1}{ x - 1} = \lim\limits_{x \to 2} \frac{ x^3 - a^3}{x-a} $ find a.
+
+\item Evaluate : $ \lim\limits_{x \to 0} \frac{ (1- x)^8 - 1}{(1- x)^2 - 1} $ 
+
+ \item Evaluate : $ \lim\limits_{ x \to 1 } \frac{ x + x^3 + x^5 +\cdots +x^{2n - 1} - n }{x-1} $
+ 
+ \item Evaluate : $ \lim\limits_{x \to 3} \frac{ x + 3}{ x^2 +4x + 3 } $
+ 
+\item Evaluate : $ \lim\limits_{x \to 3} \frac{ x^2 + 2x - 15}{ x^2 - 5x + 6 } $
+
+\item Evaluate : $ \lim\limits_{x \to 2} \frac{ x^3 - 7x + 6}{ x^3 - 7x^2 + 16x - 12   } $
+
+\item Evaluate : $ \lim\limits_{ x \to 1 } \left[ \frac{ x + 2 }{x^2-5x + 4} + \frac{ x - 4 }{3(x^2-3x+2)} \right] $
+
+\item Evaluate : $ \lim\limits_{x \to 3} \frac{ \sqrt{ 2x + 3 } - \sqrt{ 4x - 3 } }{ x^2 - 9 } $
+
+\item Evaluate : $ \lim\limits_{x \to 2} \frac{ x^2 - 4 }{ \sqrt{ x + 2 } - \sqrt{ 3x - 2 }  } $
+
+ \item Evaluate : $ \lim\limits_{ \theta \to 0} \frac{ 1 -  \cos 2\theta }{ \theta ^2  } $
+ 
+\item Evaluate : $ \lim\limits_{ x \to \frac {\pi}{3} } \frac{ 2 -  cosec\ x }{ \cot^2 x - 3  } $
+ 
+\item Evaluate : $ \lim\limits_{ x \to \pi } \frac{ \sqrt{ 5 + \cos x } -2 }{ ( \pi - x )^2  } $
+ 
+\item Evaluate : $ \lim\limits_{ x \to 1 } \frac{ 1 - x^2 }{ \sin \pi x  } $
+ 
+ 
+ 
+ 
+ 
+ 
+\end{enumerate} 
+
 
 \end{multicols}
  
