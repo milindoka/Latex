@@ -1,0 +1,145 @@
+\documentclass{beamer} 
+\usetheme{Berlin}
+\usepackage{showexpl} 
+\usepackage{tikz}
+\usepackage{chemfig}
+\usepackage[utf8]{inputenc}
+\usepackage{cancel}
+\usepackage{circuitikz}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{multicol}
+\usepackage{ragged2e}
+
+
+
+\title{Derivatives}
+\subtitle{Implicit and Logarithmic}
+
+
+
+\lstloadlanguages{[LaTeX]Tex} 
+\lstset{% 
+     basicstyle=\ttfamily\small, 
+     commentstyle=\itshape\ttfamily\small, 
+     showspaces=false, 
+     showstringspaces=false, 
+     breaklines=true, 
+     breakautoindent=true, 
+     captionpos=t 
+} 
+
+\begin{document} 
+
+\frame {
+		\titlepage
+	}
+
+%%%%%%%%%%%%%% Start Slides %%%%%%%%%%%%% 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\frame
+{
+\textbf{Question :} 
+$\begin{aligned}[t] 
+\text{If \ } x + \sqrt{xy} + y = 1 \text{\ , \  find \ \  } \frac{dy}{dx}
+\end{aligned}$
+
+\textbf{Answer:}
+\begin{equation} \nonumber
+\begin{alignedat}{4}
+& \text{Given \ } x + \sqrt{xy} + y = 1 \\
+& \text{Differentiating w.r.t. x \ }\\
+& 1 + \frac{1}{2\sqrt{xy}} \left( x\frac{dy}{dx}+y \right)+\frac{dy}{dx}=0 \\
+& \therefore 1 + \frac{x}{2\sqrt{xy}} \frac{dy}{dx}+ \frac{y}{2\sqrt{xy}}+\frac{dy}{dx}=0 \\
+& \therefore \left(\frac{x}{2\sqrt{xy}}+1\right) \frac{dy}{dx}=-1-\frac{y}{2\sqrt{xy}}\\
+\end{alignedat}
+\,
+\vrule
+\, 
+\begin{alignedat}{4}
+& \therefore \left(\frac{x+2\sqrt{xy}}{2\sqrt{xy}}\right) \frac{dy}{dx}=-\frac{2\sqrt{xy}+y}{2\sqrt{xy}}\\
+& \therefore  (x+2\sqrt{xy}\,)\ \frac{dy}{dx}= -2\sqrt{xy}-y \\
+& \therefore \frac{dy}{dx} =-\,\frac{x+2\sqrt{xy}}{2\sqrt{xy}+y}  \\
+& \\
+& \\
+\end{alignedat}
+\end{equation}
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\frame
+{ \textbf{Question :} 
+$\begin{aligned}[t] 
+\text{If \ } x^p y^q = (x+y)^{p+q} \text{\ , \ the show that \ \  } \frac{dy}{dx}=\frac{y}{x}
+\end{aligned}$
+
+%----------------------------------------
+\textbf{Answer:}
+\begin{equation} \nonumber
+\begin{alignedat}{4}
+& \text{Given \ } x^py^q = (x+y)^{p+q} \\
+& \therefore \log (x^py^q) = \log (x+y)^{p+q} \\
+& \therefore p\log x + q\log y) = (p+q)\log (x+y) \\
+& \text{Differentiating w.r.t. x \ }\\
+& \therefore \frac{p}{x}+\frac{q}{y}\frac{dy}{dx} = \frac{p+q}{x+y}\left( 1+\frac{dy}{dx}\right)\\
+& \therefore \frac{p}{x}+\frac{q}{y}\frac{dy}{dx} = \frac{p+q}{x+y} + \frac{p+q}{x+y}\,\frac{dy}{dx}\\
+& \therefore \left( \frac{q}{y}-\frac{p+q}{x+y} \right)  \frac{dy}{dx} = \frac{p+q}{x+y} - \frac{p}{x}\\
+\end{alignedat}
+\,
+%\vrule
+%\, 
+\begin{alignedat}{4}
+& \therefore \frac{\cancel{qx - py}}{y} \,  \frac{dy}{dx} =  \frac{\cancel{qx - py}}{x}\\
+& \therefore \frac{dy}{dx}=\frac{y}{x}\\
+& \\
+& \\
+& \\
+& \\
+& \\
+& \\
+\end{alignedat}
+\end{equation}
+
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame
+{ \textbf{Question :} 
+$\begin{aligned}[t] 
+\text{If \ } x^p y^q = (x+y)^{p+q} \text{\ , \ the show that \ \  } \frac{dy}{dx}=\frac{y}{x}
+\end{aligned}$
+
+%----------------------------------------
+\textbf{Answer: Contd}
+
+\begin{equation} \nonumber
+\begin{alignedat}{4}
+& \therefore \frac{q(x+y) - (p+q)y}{y(x+y)} \,  \frac{dy}{dx} = \frac{(p+q)x - p(x+y)}{(x+y)x}\\
+& \therefore \frac{qx + qy - py - qy}{y} \,  \frac{dy}{dx} = \frac{px + qx - px - py}{x}\\
+& \therefore \frac{\cancel{qx - py}}{y} \,  \frac{dy}{dx} =  \frac{\cancel{qx - py}}{x}\\
+& \therefore \frac{dy}{dx}=\frac{y}{x}\\
+& \\
+& \\
+& \\
+& \\
+& \\
+& \\
+\end{alignedat}
+\end{equation}
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+\end{document}

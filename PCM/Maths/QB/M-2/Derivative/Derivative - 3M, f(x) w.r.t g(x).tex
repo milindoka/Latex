@@ -1,0 +1,76 @@
+\documentclass[17pt]{extarticle}
+\usepackage{amsmath, amssymb}
+\usepackage{nccmath}
+\usepackage[a4paper, total={8in, 11.38in},top=2mm,left=27mm,bottom=2mm,right=5mm]{geometry}
+\usepackage{tikz}
+\usepackage{titlesec}
+
+\titleformat{\section}
+{\normalfont\normalsize\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}
+{\normalfont\normalsize\bfseries}{\thesection}{1em}{}
+
+\begin{document}
+
+\noindent
+\begin{fleqn} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Question} 
+Find derivative of $x\sin x$ with respect to $\tan x$.
+
+%----------------------------------------
+\subsection*{Answer}
+\begin{equation} \nonumber
+\begin{alignedat}{4}
+& \text{Let }\ \  u = x\sin x \\ 
+& \therefore \frac{du}{dx} = x\cos x + \sin x\\
+\end{alignedat}
+\ 
+\vrule
+\ 
+\begin{alignedat}{4}
+& \text{Let }\ \  v = \tan x \\ 
+& \therefore \frac{dv}{dx} = \sec^2x\\
+\end{alignedat}
+\ 
+\vrule
+\ 
+\begin{alignedat}{4}
+& \text{Hence } \\ 
+& \frac{du}{dx} = \frac{du/dx}{dv/dx} = \frac {x\cos x + \sin x}{\sec^2x}\\
+\end{alignedat}
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Question} 
+Find derivative of $\sin^2x$ with respect to $e^{\cos x}$.
+
+%----------------------------------------
+\subsection*{Answer}
+\begin{equation} \nonumber
+\begin{alignedat}{4}
+& \text{Let }\ \  u = \sin^2x \\ 
+& \therefore \frac{du}{dx} = 2\sin x \cos x \\
+\end{alignedat}
+\ 
+\vrule
+\ 
+\begin{alignedat}{4}
+& \text{Let }\ \  v = e^{\cos x} \\ 
+& \therefore \frac{dv}{dx} = -\sin x e^{\cos x}\\
+\end{alignedat}
+\ 
+\vrule
+\ 
+\begin{alignedat}{4}
+& \text{Hence } \\ 
+& \frac{du}{dx} = \frac{du/dx}{dv/dx} = \frac {2\sin x \cos x}{-\sin x e^{\cos x}}\\
+\end{alignedat}
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{fleqn}
+\end{document} 

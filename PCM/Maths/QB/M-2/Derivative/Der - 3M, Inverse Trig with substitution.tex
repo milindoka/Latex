@@ -1,0 +1,75 @@
+\documentclass[17pt]{extarticle}
+\usepackage{amsmath, amssymb}
+\usepackage{nccmath}
+\usepackage{cancel}
+\usepackage[a4paper, total={8in, 11.38in},top=2mm,left=27mm,bottom=2mm,right=5mm]{geometry}
+\usepackage{tikz}
+\usepackage{titlesec}
+
+\titleformat{\section}
+{\normalfont\normalsize\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}
+{\normalfont\normalsize\bfseries}{\thesection}{1em}{}
+
+\begin{document}
+
+\noindent
+\begin{fleqn} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Question} 
+
+$\begin{aligned}[t] 
+\text{If \ } y =  \cos^{-1}\left(\frac{1 - x^2}{1 + x^2}\right) \text{\,, \  find \ \  } \frac{dy}{dx}
+\end{aligned}$
+
+%----------------------------------------
+\subsection*{Answer}
+\begin{equation} \nonumber
+\begin{alignedat}{4}
+y &=  \cos^{-1}\left(\frac{1 - x^2}{1 + x^2}\right) \ \boxed{\text{Put \ } x=\tan \theta}\\
+  &=  \cos^{-1}\left(\frac{1 - \tan^2\theta}{1 + \tan^2\theta}\right)\\
+  &=  \cos^{-1}(\cos 2\theta)\\
+\end{alignedat}
+\quad
+\vrule
+\quad 
+\begin{alignedat}{4}
+&=  2\theta \\
+&=  2\tan^{-1}x\\
+\therefore \  \frac{dy}{dx} &= \frac{2}{1+x^2}
+& \\
+& \\
+\end{alignedat}
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Question} 
+
+$\begin{aligned}[t] 
+\text{If \ } y =  \tan^{-1}\left(\frac{1 + x \sin x}{x - \sin x}\right) \text{\,, \  find \ \  } \frac{dy}{dx}
+\end{aligned}$
+
+%----------------------------------------
+\subsection*{Answer}
+\begin{equation} \nonumber
+\begin{alignedat}{4}
+y &=  \tan^{-1}\left(\frac{1 + x \sin x}{x - \sin x}\right)\\
+  &=  \tan^{-1}\left(\frac{\frac{1}{x} + \sin x}{1 - \frac{1}{x}\sin x}\right)\\
+  &=  \tan^{-1} \tfrac{1}{x} + \tan^{-1}(\sin x)  \\
+\end{alignedat}
+\quad
+\vrule
+\quad 
+\begin{alignedat}{4}
+&=  \cot^{-1}x + \tan^{-1}(\sin x)  \\
+\therefore \  \frac{dy}{dx} &= \frac{-1}{1+x^2} + \frac{1}{1+\sin^2x}\ \frac{d}{dx}(\sin x)\\
+&= \frac{-1}{1+x^2} + \frac{\cos x}{1+\sin^2x} \\
+& \\
+\end{alignedat}
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{fleqn}
+\end{document} 
