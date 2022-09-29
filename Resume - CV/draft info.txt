@@ -1,0 +1,41 @@
+Milind Oka <oak444@gmail.com>
+	
+Mon, Aug 22, 2016, 9:33 PM
+	
+to swatimjoshi
+Hi,
+Sending my profile.
+Regards,
+Milind
+
+-----
+
+profile :
+
+Milind Oka has been teaching matematics in SIWS Junior college for last 26 years.
+He is proficient  in c++ , java, php, sql.
+
+He has developed a few Desktop and Android applications :
+
+Set4 - Symbolic Editor and Question Paper Generator.
+
+College  Time Table : Quick time table generation for schools and colleges.
+
+ReFort  : Optical Mark Recognition to assess  MCQ question papers. Used successfully in SIWS and Jhunjunwala College. Assessed 1 lac MCQ papers with 99.9 percent accuracy.
+
+Marklist - Android Mark list Application for teachers. It is being used in SIWS and KC college. It is available on playstore for free.
+
+HSC Form crearor - Generate HSC Practical Schedule from HSC seat numbers.
+
+In 2009 he gave software support to Youth Festival, West Zone, organized by Mumbai University. Over 600 participants from 47 universities contested in 28 events.
+
+He has designed 10 origami models which are published by Origami USA in different issues of its "FOLD" magazine.
+
+All softwares are free to download along with source code at
+
+http://sourceforge.net/projects/collegetimetable
+http://sourceforge.net/projects/set4
+http://sourceforge.net/projects/marklist
+http://sourceforge.net/projects/hsc-formcreator/
+http://sourceforge/flagindia
+
