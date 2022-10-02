@@ -1,0 +1,78 @@
+
+\documentclass[11pt,a4paper]{moderncv}
+% moderncv themes
+\moderncvtheme[green]{casual}
+% character encoding
+\usepackage[utf8]{inputenc}
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\recomputelengths
+% personal data
+\firstname{John}
+\familyname{Doe}
+\title{Design enthusiast}
+\address{12 somestreet}{3456 somecity}
+\mobile{+123 456 7890}
+\phone{+12 (3)456 78 90}
+\fax{+12 (3)456 78 90}
+\email{jdoe@design.org}
+\extrainfo{\weblink{www.ctan.org}}
+\photo[64pt]{jdoe_picture}
+\quote{Any intelligent fool can make things bigger, more complex,
+and more violent. It takes a touch of genius -- and a lot of courage -- to
+move in the opposite direction.}
+
+
+
+
+\begin{document}
+\section{Education}
+\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
+\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
+%
+\section{Master thesis}
+\cvline{title}{\emph{Title}}
+\cvline{supervisors}{Supervisors}
+
+\cvline{description}{\small Short thesis abstract}
+%
+\section{Experience}
+\subsection{Vocational}
+\cventry{year--year}{Job title}{Employer}{City}{}{Description}
+\cventry{year--year}{Job title}{Employer}{City}{}{Description}
+\subsection{Miscellaneous}
+\cventry{year--year}{Job title}{Employer}{City}{}%
+{Description line 1\newline{}Description line 2}
+%
+\section{Languages}
+\cvlanguage{language 1}{Skill level}{Comment}
+\cvlanguage{language 2}{Skill level}{Comment}
+%
+\section{Computer skills}
+\cvcomputer{category 1}{XXX, YYY, ZZZ}{category 3}{XXX, YYY, ZZZ}
+\cvcomputer{category 2}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
+%
+\section{Interests}
+\cvline{hobby 1}{\small Description}
+\cvline{hobby 2}{\small Description}
+\cvline{hobby 3}{\small Description}
+%
+\closesection{}
+\pagebreak
+%
+\section{Extra}
+\cvlistitem{Item 1}
+\cvlistitem{Item 2}
+\cvlistitem{Item 3}
+%
+\section{Extra 2}
+\cvlistdoubleitem{Item 1}{Item 4}
+\cvlistdoubleitem{Item 2}{Item 5}
+\cvlistdoubleitem{Item 3}{}
+%
+% Publications from a BibTeX file
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications} % ’publications’ is the name of a BibTeX file
+%
+\end{document}

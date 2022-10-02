@@ -1,0 +1,77 @@
+\documentclass[10pt,a4paper]{moderncv}
+\moderncvtheme[black]{classic}  
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lipsum}
+\usepackage[scale=0.9]{geometry}
+\usepackage{multicol}\setlength{\hintscolumnwidth}{4cm}
+
+
+\AtBeginDocument{\setlength{\maketitlenamewidth}{10cm}}
+\renewcommand*{\namefont}{\fontsize{10}{10}\mdseries\upshape}
+\AtBeginDocument{\recomputelengths}
+\renewcommand{\listitemsymbol}{-} 
+\moderncvtheme[blue]{classic}  
+\firstname{John}
+\familyname{\textsc{Doe}}
+
+\title{\large{Deta}} 
+\extrainfo{23,se,cel}
+\photo[64pt]{MyPhoto.jpg}
+\nopagenumbers{}
+
+\begin{document}
+
+\makecvtitle
+
+\section{Education}
+\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
+\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
+%
+\section{Master thesis}
+\cvline{title}{\emph{Title}}
+\cvline{supervisors}{Supervisors}
+
+\cvline{description}{\small Short thesis abstract}
+%
+\section{Experience}
+\subsection{Vocational}
+\cventry{year--year}{Job title}{Employer}{City}{}{Description}
+\cventry{year--year}{Job title}{Employer}{City}{}{Description}
+\subsection{Miscellaneous}
+\cventry{year--year}{Job title}{Employer}{City}{}%
+{Description line 1\newline{}Description line 2}
+%
+\section{Languages}
+\cvlanguage{language 1}{Skill level}{Comment}
+\cvlanguage{language 2}{Skill level}{Comment}
+%
+\section{Computer skills}
+\cvcomputer{category 1}{XXX, YYY, ZZZ}{category 3}{XXX, YYY, ZZZ}
+\cvcomputer{category 2}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
+%
+\section{Interests}
+\cvline{hobby 1}{\small Description}
+\cvline{hobby 2}{\small Description}
+\cvline{hobby 3}{\small Description}
+%
+\closesection{}
+\pagebreak
+%
+\section{Extra}
+\cvlistitem{Item 1}
+\cvlistitem{Item 2}
+\cvlistitem{Item 3}
+%
+\section{Extra 2}
+\cvlistdoubleitem{Item 1}{Item 4}
+\cvlistdoubleitem{Item 2}{Item 5}
+\cvlistdoubleitem{Item 3}{}
+%
+% Publications from a BibTeX file
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications} % ’publications’ is the name of a BibTeX file
+%
+\end{document}
