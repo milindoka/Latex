@@ -1,0 +1,28 @@
+Installing Latex on ubuntu can be done in two parts.
+
+1]  First Install the Latex package.
+
+These are the packages available
+
+texlive-base – 160 MB
+texlive-latex-recommended – 203 MB
+texlive – 269 MB
+texlive-latex-extra – 464 MB
+texlive-full – 5903 MB
+
+I recommend texlive-latex-extra for serious user.
+
+On terminal type
+
+$sudo apt update 
+
+and then
+
+$ sudo apt install texlive-latex-extra
+
+2]  Install latex editor
+
+I recommend Gummi.
+
+From Ubuntu Software Centre, Install "Gummi " which is easy to use Latex Editor with Live preview
+
